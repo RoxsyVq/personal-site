@@ -1,0 +1,388 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100);
+
+$font-family:'Josefin Sans', sans-serif;
+$with:100%;
+$post-fix:fixed;
+$center:center;
+$diez:10px;
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family:$font-family;
+    color: black;
+}
+.hero{
+   position:$post-fix;
+    width: $with;
+	height: $with;
+	text-align: $center;
+	overflow: hidden;
+     margin-top: $diez*5;
+   
+    img{
+        width: $diez*25;
+       
+        
+    }
+}
+
+
+#contenedor_general{
+	position: $post-fix;
+	width: $with;
+	height: $with;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	background-size: cover;
+	background-position: $center 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+   
+    .slider{
+        .slidesjs-pagination, .slidesjs-navigation, .slidesjs-stop{
+            display: none;
+        }
+    }
+}
+
+section#body{
+	width: $with;
+	min-height: $diez*70;
+	overflow: hidden;
+
+
+section#scrolldown{
+	margin: auto;
+	width: $diez*20;
+	height: $diez*6;
+
+   #mouse-icon{
+	text-align: $center;
+       
+	    }
+
+    #menorque{
+	-webkit-transform: rotate(270deg);
+	text-align: $center;
+	color: white;
+	font-size: 1.3em;
+} 
+}
+}
+    
+
+
+
+/*********about me*************/
+.strucSecciones{
+    
+    padding: 29px 0px;
+    margin-top: -20px;
+    width: 1310px;
+    position: relative;
+    left: $with / 2;
+    margin-left: -655px;
+  
+    
+    
+    
+}
+section#about-me{
+     @extend .strucSecciones;
+	background-color:aqua;
+    height: 640px;
+        
+.contain{
+      display: table-cell;
+      vertical-align: middle;
+      .svg-wrapper{
+        margin-top:100px;
+        margin-bottom: 40px;
+      }
+     .me img{
+        width: 200px; 
+      }
+      .date {
+        display: table-cell;
+        vertical-align: middle;
+        h5,p {
+        margin-top: 20px;
+        color: black;
+         }
+        }
+    .description p {
+       
+            color: black;
+        font-weight: bold;
+       
+    }
+    }
+
+}
+
+// #about-me .date h5:first-child {
+//    margin-top: 30px;
+//   
+//}
+
+
+
+/**********************portafolio**************/
+section#box{
+  
+    @extend .strucSecciones;
+    margin-top: 20px;
+    background: #fff;
+    padding-top: 30px;
+    height: 150px;
+}
+#portafolio{
+	@extend .strucSecciones;
+    height: 602px;
+   background:url("../pictures/pcs.jpg");
+    
+      
+    .main {
+
+    width: 495px;
+    height: 279px;
+    margin: 0px auto;
+    padding-left: 15px;
+    overflow: visible;
+    .slides {
+	width:$with;
+        img {
+	width:90%;
+}
+}
+ .slidesjs-pagination {
+	background:#424242;
+	list-style:none;
+	overflow:hidden;
+li {
+	float:left;
+a {
+	display:block;
+	padding:3px 8px;
+	color:#fff;
+	text-decoration:none;
+    }
+a:hover {
+	background:#000;
+}
+}
+}
+.slidesjs-navigation{
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	padding:5px 8px;
+	float:right;
+}
+} 
+
+    
+}
+
+
+ .active {
+	background:#000;
+}
+
+ 
+
+
+/***************************skill********************/
+section#skill{
+    height: 602px;
+    padding: 29px 0px;
+    width: 1310px;
+    position: relative;
+    left: 50%;
+    margin-left: -655px;
+    top: 0px;
+    margin-top: 18px;
+    background: #fff;
+    
+    .calcular{
+        height: 80%;
+        top: 120px;
+        position: absolute;
+        
+    .boxes{
+        position: absolute;
+        top: 70px;
+        
+        left: 273px;
+    .html{
+    width: 100px;
+    height: 30px;
+    background: red;
+    transition: width 3s;
+    margin: 20px 0; 
+    }
+    .html:hover{
+   width: 500px;
+}
+
+}
+ .name-skills{
+     position: absolute;
+     top: 70px;
+    left: 150px;  
+.html5{
+    width: 80px;
+    height: 30px;
+    background-color: crimson;
+    margin: 20px 0; 
+    color: #fff;
+     }
+     
+        }
+}
+.nivels{
+.nivel1{
+    left: 270px;
+
+}
+    .nivel2{
+            left: 550px;
+    }
+    .nivel3{
+        left: 800px;
+    }
+
+
+    }
+ 
+    
+}
+.nivel{
+    position: absolute;
+    bottom: 0;
+    height: $with;
+}
+    
+.basic{
+    position: absolute;
+    width: 2px;
+    height: $with;
+    background:red;
+        }
+.banner{
+    position: absolute;
+    padding: 6px 10px 5px;
+    background-color: crimson;
+    font-family: 'Montserrat';
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+section#skill .html{
+    transition-timing-function: linear;
+}
+
+
+
+/********************efeCTO LITULOS *********/
+section#about-me {
+  
+  overflow: hidden;
+  text-align: center;
+}
+
+.svg-wrapper {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: $with / 2;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+.text {
+  color: #292727;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+/******************contacto**************/
+#contacto{
+     @extend .strucSecciones;
+    height: 620px;
+    background-color: aliceblue;
+}
+/************footer**********/
+footer{
+    @extend .strucSecciones;
+height:150px;
+    background: rgba(0,0,0,0.5);
+}
+
+/****************header******/
+header{
+    z-index: 1;
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+.navbar-toggle {
+     border-color: transparent; 
+        }
+.navbar-toggle:hover {
+    background-color: transparent;
+        }
+        .navbar-nav>li>a{
+        color: aliceblue;
+        font-weight: bold;
+            padding-bottom: 2px;
+           font-weight: bolder;
+    }
+    .navbar-nav>li>a:hover{
+        text-decoration: underline;
+        text-decoration-style: red;
+        color: aliceblue;
+        
+    }
+      }
+ .navbar-brand  img{
+    width: 60px;
+    }
+    
+      
+ }
+
