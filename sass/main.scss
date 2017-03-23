@@ -1,0 +1,540 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100);
+//@import url(https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet);
+
+$font-family:'Josefin Sans', sans-serif;
+$with:100%;
+$post-fix:fixed;
+$center:center;
+$diez:10px;
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family:$font-family;
+    color: black;
+}
+.hero{
+   position:$post-fix;
+    width: $with;
+	height: $with;
+	text-align: $center;
+	overflow: hidden;
+     margin-top: $diez*5;
+   
+    img{
+        width: $diez*25;
+       
+        
+    }
+}
+
+
+#contenedor_general{
+	position: $post-fix;
+	width: $with;
+	height: $with;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	background-size: cover;
+	background-position: $center 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+   
+    .slider{
+        .slidesjs-pagination, .slidesjs-navigation, .slidesjs-stop{
+            display: none;
+            
+        }
+    }
+}
+
+section#body{
+	width: $with;
+	min-height: $diez*70;
+	overflow: hidden;
+
+
+section#scrolldown{
+	margin: auto;
+	width: $diez*20;
+	height: $diez*6;
+
+   #mouse-icon{
+	text-align: $center;
+       
+	    }
+
+    #menorque{
+	-webkit-transform: rotate(270deg);
+	text-align: $center;
+	color: white;
+	font-size: 1.3em;
+} 
+}
+}
+    
+
+
+
+/*********about me*************/
+.strucSecciones{
+    
+    padding: 29px 0px;
+    margin-top: -20px;
+    width: 1310px;
+    position: relative;
+    left: $with / 2;
+    margin-left: -655px;
+  
+    
+    
+    
+}
+section#about-me{
+     @extend .strucSecciones;
+	background-color:white;
+    height: 680px;
+        
+.contain{
+      display: table-cell;
+      vertical-align: middle;
+      .svg-wrapper{
+        margin-top:100px;
+        margin-bottom: 40px;
+      }
+     .me img{
+        width: 150px; 
+      }
+      .date {
+        display: table-cell;
+        vertical-align: middle;
+        h5,p {
+        margin-top: 20px;
+        color: black;
+        font-family: 'Merriweather';
+         }
+        }
+  
+    }
+
+}
+
+#about-me .contain{
+    .bio .biografia .descripcion{
+        margin-top: 30px;
+    
+    p{
+    font-family: 'Merriweather';
+    color: black;
+    text-align: left;
+    padding-left: 30px; 
+        
+    }
+
+    }
+
+.contain2 .meo .name .date{
+    font-family: 'Merriweather';
+    color: black;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+    }
+    
+
+// #about-me .date h5:first-child {
+//    margin-top: 30px;
+//   
+//}
+/*
+    color: #080808;
+    font-family: monospace;
+    text-align: left;*/
+
+
+
+/**********************portafolio**************/
+section#box{
+  
+    @extend .strucSecciones;
+    margin-top: 20px;
+    background: #fff;
+    padding-top: 30px;
+    height: 150px;
+}
+#portafolio{
+	@extend .strucSecciones;
+    height: 602px;
+    background:url("../pictures/pcs.jpg");
+    
+      
+    .main {
+
+    width: 495px;
+    height: 279px;
+    margin: 0px auto;
+    padding-left: 15px;
+    overflow: visible;
+    .slides {
+	width:$with;
+        img {
+	width:90%;
+}
+}
+ .slidesjs-pagination {
+	background:#424242;
+	list-style:none;
+	overflow:hidden;
+li {
+	float:left;
+a {
+	display:block;
+	padding:3px 8px;
+	color:#fff;
+	text-decoration:none;
+    }
+a:hover {
+	background:#000;
+}
+}
+}
+.slidesjs-navigation{
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	padding:5px 8px;
+	float:right;
+}
+} 
+
+    
+}
+
+
+ .active {
+	background:#000;
+}
+
+ 
+
+
+/***************************skill********************/
+section#skill{
+    height: 670px;
+    padding: 29px 0px;
+    width: 1310px;
+    position: relative;
+    left: 50%;
+    margin-left: -655px;
+    top: 0px;
+    margin-top: 18px;
+    background: #fff;
+    
+    .calcular{
+        height: 80%;
+        top: 120px;
+        position: absolute;
+        width: 80%;
+        #name-skil ul{
+    margin-top: 35px;
+   
+        }
+
+}
+.nivels{
+.nivel1{
+    left:10%;
+
+}
+    .nivel2{
+            left: 45%;
+    }
+    .nivel3{
+        left: 95%;
+    }
+
+
+    }
+ 
+    
+}
+.nivel{
+    position: absolute;
+    bottom: 0;
+    height: $with;
+}
+    
+.basic{
+    position: absolute;
+    width: 2px;
+    height: $with;
+    background:red;
+        }
+.banner{
+    position: absolute;
+    padding: 6px 10px 5px;
+    background-color: crimson;
+    font-family: 'Montserrat';
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+section#skill .html{
+    transition-timing-function: linear;
+}
+
+
+
+/********************efeCTO LITULOS *********/
+section#about-me {
+  
+  overflow: hidden;
+  text-align: center;
+}
+
+.svg-wrapper {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: $with / 2;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+.text {
+  color: #292727;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+/******************contacto**************/
+#contacto{
+   
+   
+    background-color:aqua;
+    .container{
+        .lest{
+            
+               height: 200PX; 
+            
+            .title{
+                
+                }
+            .min{
+                text-transform: uppercase;
+                font-family: "Montserrat";
+            }
+            .sub{
+                font-size: 18px;
+                font-family: "Libre Baskerville";
+                font-style: italic;
+                font-weight: 400;
+                color: #fff;
+            }
+            .strong{
+                font-family: "Montserrat";
+                font-weight: 700;
+                font-style: normal;
+                font-size: 30px;
+                margin: 5px auto;            
+            }
+          
+        }
+    }
+    
+    .yo-mas{
+        height: 420px;
+        
+     
+        .social{
+            height: 100%;
+             background-color: black;
+        }
+        
+    }
+   
+   /*     .form-contact{
+//            width: 600px;
+//            height: 600px;
+//            padding: 40px 90px;
+//            background: url(../images/worldmapform.jpg) no-repeat;
+            padding: 130px 165px;
+            position: fixed;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            width: 800px;
+            height: 800px;
+            z-index: 999999;
+            //visibility: hidden;
+            backface-visibility: hidden;
+        }
+    */
+}
+
+contac{
+    @extend .strucSecciones;
+    height: 640px; 
+    display: none;
+    opacity: 0;
+    bottom: 0;
+    
+   
+}
+.visible{
+    opacity: 1;
+    display: table; 
+}
+#formulario{
+    z-index: 50;
+    background: rgba(0,0,0,0.6);
+position: fixed;
+    
+        
+    .form-contact{
+          padding: 0px 50px 50px 50px;
+          background: rgba(0,0,0,0.9);  
+          border-radius: 20px;
+       
+        
+
+       
+    .email{
+        background: url(../pictures/contact-email-gray.png) 20px center no-repeat transparent;        
+    }
+    .name{
+        background: url(../pictures/contact-name-gray.png) 20px center no-repeat transparent;
+ 
+    }
+    .text{
+        width: 100%;
+        font-weight: 300px;
+        margin-top: -35px;
+        font-size: 17px;
+        max-width: 470px;
+        margin-bottom: 33px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        color: #fff;
+        height: 47px;
+        line-height: 47px;
+        padding: 0px 15px 0px 0px;
+        text-indent: 64px;
+        font-family: "Raleway";
+    }
+    .area{
+        height: 140px;
+        line-height: 23px;
+        text-indent: 0px;
+        padding: 17px 20px;
+        background: transparent;
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .enviar{
+      
+        text-indent: 0px;
+        padding: 10px 20px;
+        background: transparent;
+        border-radius: 5px;
+        border: 2px solid red;
+        
+ 
+    }
+ 
+} 
+    
+}
+/************footer**********/
+footer{
+    @extend .strucSecciones;
+height:150px;
+    background: rgba(0,0,0,0.5);
+}
+
+/****************header*********/
+header{
+    z-index: 100;
+        position: fixed;
+    top:0px;
+    right: 0;
+    left: 0;
+
+    
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+.navbar-toggle {
+     border-color: transparent; 
+        }
+.navbar-toggle:hover {
+    background-color: transparent;
+        }
+    .navbar-nav>li{
+            padding: 15px 6px 15px 5px;
+   
+    a{
+        color: aliceblue;
+        font-weight: bold;
+        padding-bottom: 2px;
+        font-weight: bolder;
+        border-bottom: 2px solid transparent;
+        letter-spacing: 1px;
+       
+        
+    }
+    }
+    .navbar-nav>li>a:hover{
+       
+        color: aliceblue;
+       
+        border-bottom-color: #f9333f;
+        
+    }
+      }
+ .navbar-brand  img{
+    width: 60px;
+    }
+    
+      
+ }
+
+/*************************hjgfjgj************/
+
+

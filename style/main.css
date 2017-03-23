@@ -1,0 +1,358 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: black; }
+
+.hero {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 50px; }
+  .hero img {
+    width: 250px; }
+
+#contenedor_general {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background-size: cover;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  #contenedor_general .slider .slidesjs-pagination, #contenedor_general .slider .slidesjs-navigation, #contenedor_general .slider .slidesjs-stop {
+    display: none; }
+
+section#body {
+  width: 100%;
+  min-height: 700px;
+  overflow: hidden; }
+  section#body section#scrolldown {
+    margin: auto;
+    width: 200px;
+    height: 60px; }
+    section#body section#scrolldown #mouse-icon {
+      text-align: center; }
+    section#body section#scrolldown #menorque {
+      -webkit-transform: rotate(270deg);
+      text-align: center;
+      color: white;
+      font-size: 1.3em; }
+
+/*********about me*************/
+.strucSecciones, section#about-me, section#box, #portafolio, contac, footer {
+  padding: 29px 0px;
+  margin-top: -20px;
+  width: 1310px;
+  position: relative;
+  left: 50%;
+  margin-left: -655px; }
+
+section#about-me {
+  background-color: white;
+  height: 680px; }
+  section#about-me .contain {
+    display: table-cell;
+    vertical-align: middle; }
+    section#about-me .contain .svg-wrapper {
+      margin-top: 100px;
+      margin-bottom: 40px; }
+    section#about-me .contain .me img {
+      width: 150px; }
+    section#about-me .contain .date {
+      display: table-cell;
+      vertical-align: middle; }
+      section#about-me .contain .date h5, section#about-me .contain .date p {
+        margin-top: 20px;
+        color: black;
+        font-family: 'Merriweather'; }
+
+#about-me .contain .bio .biografia .descripcion {
+  margin-top: 30px; }
+  #about-me .contain .bio .biografia .descripcion p {
+    font-family: 'Merriweather';
+    color: black;
+    text-align: left;
+    padding-left: 30px; }
+#about-me .contain .contain2 .meo .name .date {
+  font-family: 'Merriweather';
+  color: black;
+  text-align: left;
+  padding-left: 30px; }
+
+/*
+    color: #080808;
+    font-family: monospace;
+    text-align: left;*/
+/**********************portafolio**************/
+section#box {
+  margin-top: 20px;
+  background: #fff;
+  padding-top: 30px;
+  height: 150px; }
+
+#portafolio {
+  height: 602px;
+  background: url("../pictures/pcs.jpg"); }
+  #portafolio .main {
+    width: 495px;
+    height: 279px;
+    margin: 0px auto;
+    padding-left: 15px;
+    overflow: visible; }
+    #portafolio .main .slides {
+      width: 100%; }
+      #portafolio .main .slides img {
+        width: 90%; }
+    #portafolio .main .slidesjs-pagination {
+      background: #424242;
+      list-style: none;
+      overflow: hidden; }
+      #portafolio .main .slidesjs-pagination li {
+        float: left; }
+        #portafolio .main .slidesjs-pagination li a {
+          display: block;
+          padding: 3px 8px;
+          color: #fff;
+          text-decoration: none; }
+        #portafolio .main .slidesjs-pagination li a:hover {
+          background: #000; }
+    #portafolio .main .slidesjs-navigation {
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 8px;
+      float: right; }
+
+.active {
+  background: #000; }
+
+/***************************skill********************/
+section#skill {
+  height: 670px;
+  padding: 29px 0px;
+  width: 1310px;
+  position: relative;
+  left: 50%;
+  margin-left: -655px;
+  top: 0px;
+  margin-top: 18px;
+  background: #fff; }
+  section#skill .calcular {
+    height: 80%;
+    top: 120px;
+    position: absolute;
+    width: 80%; }
+    section#skill .calcular #name-skil ul {
+      margin-top: 35px; }
+  section#skill .nivels .nivel1 {
+    left: 10%; }
+  section#skill .nivels .nivel2 {
+    left: 45%; }
+  section#skill .nivels .nivel3 {
+    left: 95%; }
+
+.nivel {
+  position: absolute;
+  bottom: 0;
+  height: 100%; }
+
+.basic {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: red; }
+
+.banner {
+  position: absolute;
+  padding: 6px 10px 5px;
+  background-color: crimson;
+  font-family: 'Montserrat';
+  color: #FFF;
+  font-size: 18px; }
+
+section#skill .html {
+  transition-timing-function: linear; }
+
+/********************efeCTO LITULOS *********/
+section#about-me {
+  overflow: hidden;
+  text-align: center; }
+
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px; }
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8; }
+
+.text {
+  color: #292727;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px; }
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px; }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px; } }
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards; }
+
+/******************contacto**************/
+#contacto {
+  background-color: aqua;
+   /*     .form-contact{
+//            width: 600px;
+//            height: 600px;
+//            padding: 40px 90px;
+//            background: url(../images/worldmapform.jpg) no-repeat;
+            padding: 130px 165px;
+            position: fixed;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            width: 800px;
+            height: 800px;
+            z-index: 999999;
+            //visibility: hidden;
+            backface-visibility: hidden;
+        }
+    */ }
+  #contacto .container .lest {
+    height: 200PX; }
+    #contacto .container .lest .min {
+      text-transform: uppercase;
+      font-family: "Montserrat"; }
+    #contacto .container .lest .sub {
+      font-size: 18px;
+      font-family: "Libre Baskerville";
+      font-style: italic;
+      font-weight: 400;
+      color: #fff; }
+    #contacto .container .lest .strong {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-style: normal;
+      font-size: 30px;
+      margin: 5px auto; }
+  #contacto .yo-mas {
+    height: 420px; }
+    #contacto .yo-mas .social {
+      height: 100%;
+      background-color: black; }
+
+contac {
+  height: 640px;
+  display: none;
+  opacity: 0;
+  bottom: 0; }
+
+.visible {
+  opacity: 1;
+  display: table; }
+
+#formulario {
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed; }
+  #formulario .form-contact {
+    padding: 0px 50px 50px 50px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20px; }
+    #formulario .form-contact .email {
+      background: url(../pictures/contact-email-gray.png) 20px center no-repeat transparent; }
+    #formulario .form-contact .name {
+      background: url(../pictures/contact-name-gray.png) 20px center no-repeat transparent; }
+    #formulario .form-contact .text {
+      width: 100%;
+      font-weight: 300px;
+      margin-top: -35px;
+      font-size: 17px;
+      max-width: 470px;
+      margin-bottom: 33px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      color: #fff;
+      height: 47px;
+      line-height: 47px;
+      padding: 0px 15px 0px 0px;
+      text-indent: 64px;
+      font-family: "Raleway"; }
+    #formulario .form-contact .area {
+      height: 140px;
+      line-height: 23px;
+      text-indent: 0px;
+      padding: 17px 20px;
+      background: transparent;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 5px; }
+    #formulario .form-contact .enviar {
+      text-indent: 0px;
+      padding: 10px 20px;
+      background: transparent;
+      border-radius: 5px;
+      border: 2px solid red; }
+
+/************footer**********/
+footer {
+  height: 150px;
+  background: rgba(0, 0, 0, 0.5); }
+
+/****************header*********/
+header {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0; }
+  header .navbar-default {
+    background-color: transparent;
+    border-color: transparent; }
+    header .navbar-default .navbar-toggle {
+      border-color: transparent; }
+    header .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+    header .navbar-default .navbar-nav > li {
+      padding: 15px 6px 15px 5px; }
+      header .navbar-default .navbar-nav > li a {
+        color: aliceblue;
+        font-weight: bold;
+        padding-bottom: 2px;
+        font-weight: bolder;
+        border-bottom: 2px solid transparent;
+        letter-spacing: 1px; }
+    header .navbar-default .navbar-nav > li > a:hover {
+      color: aliceblue;
+      border-bottom-color: #f9333f; }
+  header .navbar-brand img {
+    width: 60px; }
+
+/*************************hjgfjgj************/
+
+/*# sourceMappingURL=main.css.map */

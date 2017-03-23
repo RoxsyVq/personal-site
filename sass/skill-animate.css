@@ -1,0 +1,133 @@
+section#skill ul {
+  float: left;
+  margin: 0;
+  padding: 5%;
+  width: 100%;
+}
+
+section#skill ul li {
+  background-color: #e6e6e6;
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  background-position: 20px 24px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 12px -5px #999 inset;
+  color: #fff;
+  cursor: default;
+  float: left;
+  font-size: 24px;
+  line-height: 50px;
+  list-style-type: none;
+  margin: 0 0 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  text-shadow: 0px -1px 0px #fff;
+  width: 100%;
+margin-top: 15px;
+}
+
+section#skill ul li img {
+  border: 10px solid transparent;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 1px 0 1px -1px #d9d9d9;
+  float: left;
+  margin-right: 15px;
+  margin-top: 0;
+}
+
+section#skill .s_responsive img {
+  border-color: rgba(73, 167, 42, 1);
+}
+
+section#skill .s_fotografia img {
+  border-color: rgba(215, 48, 7, 1);
+}
+
+section#skill .s_video img {
+  border-color: rgba(38, 98, 158, 1);
+}
+
+section#skill .s_imagen img {
+  border-color: rgba(186, 58, 131, 1);
+}
+
+section#skill .s_animacion img {
+  border-color: rgba(107, 107, 107, 1);
+}
+
+/*lhtm*/
+section#skill .s_responsive {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 32px, rgba(73, 167, 42, 0.8) 32px, rgba(73, 167, 42, 0.8) 99%, rgba(73, 167, 42, 1) 100%);
+  background-repeat: repeat-y;
+  background-size: 95% auto;
+/*  animation: s_responsive 1.9s ease-in-out;*/
+}
+.anime1{
+    animation: s_responsive 1.9s ease-in-out;
+}
+
+/*fotografia*/
+section#skill .s_fotografia {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 32px, rgba(221, 86, 50, 0.8) 32px, rgba(221, 86, 50, 0.8) 99%, rgba(221, 86, 50, 1) 100%);
+  background-repeat: repeat-y;
+  background-size: 80% auto;
+/*  animation: s_fotografia 1.6s ease-in-out;*/
+}
+.anime2{
+    animation: s_fotografia 1.6s ease-in-out;
+}
+/*video*/
+section#skill .s_video {
+  background-image: linear-gradient(to right, rgba(38, 98, 158, 0.8) 0%, rgba(38, 98, 158, 0.8) 99%, rgba(38, 98, 158, 1) 100%);
+  background-repeat: repeat-y;
+  background-size: 60% auto;
+/*  */
+}
+.anime3{
+    animation: s_video 1.2s ease-in-out;
+}
+
+
+/*imagen*/
+section#skill .s_imagen {
+  background-image: linear-gradient(to right, rgba(186, 58, 131, 0.8) 0%, rgba(186, 58, 131, 0.8) 99%, rgba(186, 58, 131, 1) 100%);
+  background-repeat: repeat-y;
+  background-size: 90% auto;
+/*  animation: s_imagen 1.8s ease-in-out;*/
+}
+.anime4{
+    animation: s_imagen 1.8s ease-in-out; 
+}
+
+/*animacion*/
+section#skill.s_animacion {
+  background-image: linear-gradient(to right, rgba(107, 107, 107, 0.8) 0%, rgba(107, 107, 107, 0.8) 99%, rgba(107, 107, 107, 1) 100%);
+  background-repeat: repeat-y;
+  background-size: 70% auto;
+/*  animation: s_animacion 1.4s ease-in-out;*/
+}
+.anime5{
+     animation: s_animacion 1.4s ease-in-out;
+}
+
+@keyframes s_responsive {
+  0% {background-size: 0% auto;}
+  100% {background-size: 95% auto;}
+}
+@keyframes s_imagen {
+  0% {background-size: 0% auto;}
+  100% {background-size: 90% auto;}
+}
+@keyframes s_fotografia {
+  0% {background-size: 0% auto;}
+  100% {background-size: 80% auto;}
+}
+@keyframes s_video {
+  0% {background-size: 0% auto;}
+  100% {background-size: 60% auto;}
+}
+@keyframes s_animacion {
+  0% {background-size: 0% auto;}
+  100% {background-size: 70% auto;}
+}
