@@ -11,8 +11,7 @@
   height: 100%;
   text-align: center;
   overflow: hidden;
-  margin-top: 50px;
-  top: 0px; }
+  margin-top: 50px; }
   .hero img {
     width: 250px; }
 
@@ -47,7 +46,7 @@ section#body {
       font-size: 1.3em; }
 
 /*********about me*************/
-.strucSecciones, section#about-me, section#box, #portafolio, contac, footer {
+.strucSecciones, section#about-me, section#box, #portafolio, #contacto, footer {
   padding: 29px 0px;
   margin-top: -20px;
   width: 1310px;
@@ -56,8 +55,8 @@ section#body {
   margin-left: -655px; }
 
 section#about-me {
-  background-color: white;
-  height: 680px; }
+  background-color: aqua;
+  height: 640px; }
   section#about-me .contain {
     display: table-cell;
     vertical-align: middle; }
@@ -65,32 +64,17 @@ section#about-me {
       margin-top: 100px;
       margin-bottom: 40px; }
     section#about-me .contain .me img {
-      width: 150px; }
+      width: 200px; }
     section#about-me .contain .date {
       display: table-cell;
       vertical-align: middle; }
       section#about-me .contain .date h5, section#about-me .contain .date p {
         margin-top: 20px;
-        color: black;
-        font-family: 'Merriweather'; }
+        color: black; }
+    section#about-me .contain .description p {
+      color: black;
+      font-weight: bold; }
 
-#about-me .contain .bio .biografia .descripcion {
-  margin-top: 30px; }
-  #about-me .contain .bio .biografia .descripcion p {
-    font-family: 'Merriweather';
-    color: black;
-    text-align: left;
-    padding-left: 30px; }
-#about-me .contain .contain2 .meo .name .date {
-  font-family: 'Merriweather';
-  color: black;
-  text-align: left;
-  padding-left: 30px; }
-
-/*
-    color: #080808;
-    font-family: monospace;
-    text-align: left;*/
 /**********************portafolio**************/
 section#box {
   margin-top: 20px;
@@ -137,7 +121,7 @@ section#box {
 
 /***************************skill********************/
 section#skill {
-  height: 670px;
+  height: 602px;
   padding: 29px 0px;
   width: 1310px;
   position: relative;
@@ -149,16 +133,35 @@ section#skill {
   section#skill .calcular {
     height: 80%;
     top: 120px;
-    position: absolute;
-    width: 80%; }
-    section#skill .calcular #name-skil ul {
-      margin-top: 35px; }
+    position: absolute; }
+    section#skill .calcular .boxes {
+      position: absolute;
+      top: 70px;
+      left: 273px; }
+      section#skill .calcular .boxes .html {
+        width: 100px;
+        height: 30px;
+        background: red;
+        transition: width 3s;
+        margin: 20px 0; }
+      section#skill .calcular .boxes .html:hover {
+        width: 500px; }
+    section#skill .calcular .name-skills {
+      position: absolute;
+      top: 70px;
+      left: 150px; }
+      section#skill .calcular .name-skills .html5 {
+        width: 80px;
+        height: 30px;
+        background-color: crimson;
+        margin: 20px 0;
+        color: #fff; }
   section#skill .nivels .nivel1 {
-    left: 10%; }
+    left: 270px; }
   section#skill .nivels .nivel2 {
-    left: 45%; }
+    left: 550px; }
   section#skill .nivels .nivel3 {
-    left: 95%; }
+    left: 800px; }
 
 .nivel {
   position: absolute;
@@ -226,111 +229,17 @@ section#about-me {
 
 /******************contacto**************/
 #contacto {
-  background-color: aqua;
-   /*     .form-contact{
-//            width: 600px;
-//            height: 600px;
-//            padding: 40px 90px;
-//            background: url(../images/worldmapform.jpg) no-repeat;
-            padding: 130px 165px;
-            position: fixed;
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            width: 800px;
-            height: 800px;
-            z-index: 999999;
-            //visibility: hidden;
-            backface-visibility: hidden;
-        }
-    */ }
-  #contacto .container .lest {
-    height: 200PX; }
-    #contacto .container .lest .min {
-      text-transform: uppercase;
-      font-family: "Montserrat"; }
-    #contacto .container .lest .sub {
-      font-size: 18px;
-      font-family: "Libre Baskerville";
-      font-style: italic;
-      font-weight: 400;
-      color: #fff; }
-    #contacto .container .lest .strong {
-      font-family: "Montserrat";
-      font-weight: 700;
-      font-style: normal;
-      font-size: 30px;
-      margin: 5px auto; }
-  #contacto .yo-mas {
-    height: 420px; }
-    #contacto .yo-mas .social {
-      height: 100%;
-      background-color: black; }
-
-contac {
-  height: 640px;
-  display: none;
-  opacity: 0;
-  bottom: 0; }
-
-.visible {
-  opacity: 1;
-  display: table; }
-
-#formulario {
-  z-index: 50;
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed; }
-  #formulario .form-contact {
-    padding: 0px 50px 50px 50px;
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 20px; }
-    #formulario .form-contact .email {
-      background: url(../pictures/contact-email-gray.png) 20px center no-repeat transparent; }
-    #formulario .form-contact .name {
-      background: url(../pictures/contact-name-gray.png) 20px center no-repeat transparent; }
-    #formulario .form-contact .text {
-      width: 100%;
-      font-weight: 300px;
-      margin-top: -35px;
-      font-size: 17px;
-      max-width: 470px;
-      margin-bottom: 33px;
-      border: 1px solid #fff;
-      border-radius: 4px;
-      color: #fff;
-      height: 47px;
-      line-height: 47px;
-      padding: 0px 15px 0px 0px;
-      text-indent: 64px;
-      font-family: "Raleway"; }
-    #formulario .form-contact .area {
-      height: 140px;
-      line-height: 23px;
-      text-indent: 0px;
-      padding: 17px 20px;
-      background: transparent;
-      margin-top: 20px;
-      width: 100%;
-      border-radius: 5px; }
-    #formulario .form-contact .enviar {
-      text-indent: 0px;
-      padding: 10px 20px;
-      background: transparent;
-      border-radius: 5px;
-      border: 2px solid red; }
+  height: 620px;
+  background-color: aliceblue; }
 
 /************footer**********/
 footer {
   height: 150px;
   background: rgba(0, 0, 0, 0.5); }
 
-/****************header*********/
+/****************header******/
 header {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  width: 100%; }
+  z-index: 1; }
   header .navbar-default {
     background-color: transparent;
     border-color: transparent; }
@@ -338,21 +247,16 @@ header {
       border-color: transparent; }
     header .navbar-default .navbar-toggle:hover {
       background-color: transparent; }
-    header .navbar-default .navbar-nav > li {
-      padding: 15px 6px 15px 5px; }
-      header .navbar-default .navbar-nav > li a {
-        color: aliceblue;
-        font-weight: bold;
-        padding-bottom: 2px;
-        font-weight: bolder;
-        border-bottom: 2px solid transparent;
-        letter-spacing: 1px; }
-    header .navbar-default .navbar-nav > li > a:hover {
+    header .navbar-default .navbar-nav > li > a {
       color: aliceblue;
-      border-bottom-color: #f9333f; }
+      font-weight: bold;
+      padding-bottom: 2px;
+      font-weight: bolder; }
+    header .navbar-default .navbar-nav > li > a:hover {
+      text-decoration: underline;
+      text-decoration-style: red;
+      color: aliceblue; }
   header .navbar-brand img {
     width: 60px; }
 
-/*************************hjgfjgj************/
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
