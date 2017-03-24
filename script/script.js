@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$(document).scroll(function(){
         
 		var scrollTop = $(this).scrollTop();
-        //console.log(scrollTop)
+        console.log(scrollTop)
 		var pixels = scrollTop / 70;
 
 		if(scrollTop < height){
@@ -25,7 +25,7 @@ $(document).ready(function(){
 			});
 
 		}
-       if(scrollTop >= 1367 & scrollTop < 2045 ){
+       if(scrollTop >= 1277 & scrollTop < 2045 ){
           $('.s_responsive').addClass('anime1');
             $('.s_fotografia').addClass('anime2');
             $('.s_video').addClass('anime3');
@@ -40,6 +40,12 @@ $(document).ready(function(){
             $('.s_video').removeClass('anime3');
             $('.s_imagen').removeClass('anime4');
             $('.s_animacion').removeClass('anime5');
+        }
+        if(scrollTop>=629){
+           $('header').addClass('color-header') ;
+        }
+        else{
+             $('header').removeClass('color-header')
         }
         
 

@@ -5,12 +5,39 @@
 
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100);
 //@import url(https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet);
-
+@import url(https://fonts.googleapis.com/css?family=Armata|Didact+Gothic|Philosopher);
+//variables
 $font-family:'Josefin Sans', sans-serif;
 $with:100%;
 $post-fix:fixed;
 $center:center;
 $diez:10px;
+$font-text:'Didact Gothic';
+$rosado:rgba(233,114,126,1);
+$negro:#000;
+$blanco:#fff;
+$center:center;
+$aliceblue:aliceblue;
+$transparent:transparent;
+@mixin strucSecciones{
+    
+    padding: 29px 0px;
+    margin-top: -20px;
+    width: 1310px;
+    position: relative;
+    left: $with / 2;
+    margin-left: -655px;
+    
+}
+@mixin diseño-botton{
+        text-indent: 0px;
+        padding: 10px 20px;
+        background: transparent;
+        border-radius: 5px;
+        border: 2px solid white;
+        color: white;
+        font-size: 20px;
+}
 
 
 *{
@@ -52,38 +79,43 @@ header{
     border-color: transparent;
 .navbar-toggle {
      border-color: transparent; 
-        }
-.navbar-toggle:hover {
+        
+        &:hover {
     background-color: transparent;
         }
+    }
     .navbar-nav>li{
-            padding: 15px 6px 15px 5px;
+            padding: 7px 3px 5px 3px;
    
     a{
-        color: aliceblue;
+        color: $aliceblue;
         font-weight: bold;
         padding-bottom: 2px;
         font-weight: bolder;
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid $transparent;
         letter-spacing: 1px;
        
-        
-    }
-    }
-    .navbar-nav>li>a:hover{
+    &:hover{
        
         color: aliceblue;
        
         border-bottom-color: #f9333f;
-        
-    }
-      }
+       }
+    } 
+  }
+}
  .navbar-brand  img{
-    width: 60px;
+    width: 40px;
+     top: 10px;
+     position: absolute;
     }
     
-      
- }
+}
+//header en los demas secciones
+.color-header{
+    background: rgba($negro ,0.6);
+    font-weight: 600;
+}
 // parallax
 
 
@@ -136,21 +168,9 @@ section#scrolldown{
 
 
 /*********about me*************/
-.strucSecciones{
-    
-    padding: 29px 0px;
-    margin-top: -20px;
-    width: 1310px;
-    position: relative;
-    left: $with / 2;
-    margin-left: -655px;
-  
-    
-    
-    
-}
+
 section#about-me{
-     @extend .strucSecciones;
+    @include strucSecciones;
 	background-color:white;
     height: 680px;
         
@@ -165,13 +185,28 @@ section#about-me{
         width: 150px; 
       }
       .date {
-        display: table-cell;
-        vertical-align: middle;
-        h5,p {
-        margin-top: 20px;
-        color: black;
-        font-family: 'Merriweather';
+            display: table-cell;
+            vertical-align: middle;
+            h5,p {
+            margin-top: 20px;
+            color: black;
+            font-family: $font-text;
+                a{
+                    text-decoration-line: none;
+                }
          }
+          #name , #correo , #cv{
+              font-size: 15px;
+              font-weight: 500;
+              font-family: Philosopher;
+              text-transform: uppercase;
+              text-decoration-line: none;
+          }
+          #name:hover , #correo:hover , #cv:hover{
+              background: rgba(233,114,126,0.6);
+              border-radius: 10px;
+              padding: 10px 10px;
+          }
         }
   
     }
@@ -183,10 +218,10 @@ section#about-me{
         margin-top: 30px;
     
     p{
-    font-family: 'Merriweather';
-    color: black;
-    text-align: left;
-    padding-left: 30px; 
+        font-family: $font-text;
+        color: black;
+        text-align: left;
+        padding-left: 30px; 
         
     }
 
@@ -202,49 +237,39 @@ section#about-me{
     }
     
 
-// #about-me .date h5:first-child {
-//    margin-top: 30px;
-//   
-//}
-/*
-    color: #080808;
-    font-family: monospace;
-    text-align: left;*/
+
 
 
 
 /**********************portafolio**************/
 section#box{
   
-    @extend .strucSecciones;
+    @include strucSecciones;
     margin-top: 20px;
     background: #fff;
     padding-top: 30px;
     height: 150px;
 }
 #portafolio{
-	@extend .strucSecciones;
+	@include strucSecciones;
     height: 602px;
     background:url("../pictures/pcs.jpg");
-    
-      
     .main {
-
-    width: 495px;
-    height: 279px;
-    margin: 0px auto;
-    padding-left: 15px;
-    overflow: visible;
-    .slides {
-	width:$with;
-        .cont-img{
-            position: relative;
-          background: rgba(0,0,0,0.8);
-            z-index: 2;
-        img {
-	        width:100%;
-         }   
-        }
+        width: 495px;
+        height: 279px;
+        margin: 0px auto;
+        padding-left: 15px;
+        overflow: visible;
+        .slides {
+            width:$with;
+            .cont-img{
+                    position: relative;
+                    background: rgba(0,0,0,0.8);
+                    z-index: 2;
+                    img {
+                        width:100%;
+                     }   
+                }
         .cont-img:hover .hov2{
             // background:rgba(0,0,0,0.5) url(../pictures/w);
             background-size: cover;
@@ -275,26 +300,26 @@ section#box{
     height: 100%;
     opacity: 0;
     z-index: 20;
-   transition: all 0.5s;
-   
+    transition: all 0.5s;
     background-size: cover;
         }
  .slidesjs-pagination {
 	background:#424242;
 	list-style:none;
 	overflow:hidden;
-li {
-	float:left;
-a {
-	display:block;
-	padding:3px 8px;
-	color:#fff;
-	text-decoration:none;
+            li {
+                float:left;
+                a {
+                    display:block;
+                    padding:3px 8px;
+                    color:#fff;
+                    text-decoration:none;
+                    
+                    &:hover {
+                        background:#000;
+            }
+        }
     }
-a:hover {
-	background:#000;
-}
-}
 }
 .slidesjs-navigation{
 	background:#000;
@@ -327,7 +352,6 @@ section#skill{
     margin-left: -655px;
     top: 0px;
     margin-top: 18px;
-     
     background: #63c3c2 ;
    //rgba(66,135,140,0.9);#509b9e
     //rgba(233,114,126,1)
@@ -336,24 +360,23 @@ section#skill{
         top: 120px;
         position: absolute;
         width: 80%;
-        #name-skil ul{
-    margin-top: 35px;
+            #name-skil ul{
+                    margin-top: 35px;
    
         }
 
 }
 .nivels{
-.nivel1{
-    left:12.2%;
+    .nivel1{
+        left:12.2%;
 
-}
+    }
     .nivel2{
             left: 45%;
     }
     .nivel3{
         left: 95%;
     }
-
 
     }
     .text{
@@ -447,7 +470,6 @@ section#about-me {
 /******************contacto**************/
 #contacto{
    
-   
     background-color:#dd7785;
     //rgba(242,139,130,1)
     .container{
@@ -479,13 +501,10 @@ section#about-me {
                 
             }
                 button{
-                    padding: 10px 30px;
-                    color: aliceblue;
-                    background: transparent;
-                    border-radius: 2px solid  #000;
+                    @include diseño-botton;
                     
                 }
-          }
+           }
           
         }
     }
@@ -493,19 +512,11 @@ section#about-me {
         width: 100%;
         height: 360px;
        
-            img{
-               
             }
-        }
   
     .yo-mas{
         height: 360px;
-        .slider-mas{
-            
-            
-        }
-        
-     
+   
         .social{
                 background:90% url("../pictures/3.jpg");
                 background-size: cover;
@@ -539,27 +550,10 @@ section#about-me {
         
     }
    
-   /*     .form-contact{
-//            width: 600px;
-//            height: 600px;
-//            padding: 40px 90px;
-//            background: url(../images/worldmapform.jpg) no-repeat;
-            padding: 130px 165px;
-            position: fixed;
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            width: 800px;
-            height: 800px;
-            z-index: 999999;
-            //visibility: hidden;
-            backface-visibility: hidden;
-        }
-    */
-}
+ }
 
 contac{
-    @extend .strucSecciones;
+    @include strucSecciones;
     height: 580px; 
     display: none;
     opacity: 0;
@@ -577,15 +571,15 @@ contac{
 /*************formulario flotante---*/
 #formulario{
     z-index: 100;
-    background: rgba(0,0,0,0.6);
-position: fixed;
+    background: rgba($negro,0.6);
+    position: fixed;
     
         
     .form-contact{
           padding: 0px 50px 50px 50px;
-          background: rgba(0,0,0,0.9);  
+          background: rgba($negro,0.9);  
           border-radius: 20px;
-        color: white;
+          color: $blanco;
         .glyphicon{
             color: white;
             
@@ -608,7 +602,7 @@ position: fixed;
         font-size: 17px;
         max-width: 470px;
         margin-bottom: 33px;
-        border: 1px solid #fff;
+        border: 1px solid $blanco;
         border-radius: 4px;
         color: #fff;
         height: 47px;
@@ -618,22 +612,18 @@ position: fixed;
         font-family: "Raleway";
     }
     .area{
-        height: 140px;
+        height: $diez * 14 ;
         line-height: 23px;
         text-indent: 0px;
         padding: 17px 20px;
         background: transparent;
-        margin-top: 20px;
-        width: 100%;
+        margin-top: $diez*2;
+        width: $with;
         border-radius: 5px;
     }
     .enviar{
       
-        text-indent: 0px;
-        padding: 10px 20px;
-        background: transparent;
-        border-radius: 5px;
-        border: 2px solid red;
+    @include diseño-botton;
         
  
     }
@@ -643,21 +633,21 @@ position: fixed;
 }
 /************footer**********/
 footer{
-    @extend .strucSecciones;
+    @include strucSecciones;
     height:100px;
-    background: black;
+    background: $negro;
     .pie-pagina{
         display: flex;
-        justify-content: center;
-        align-items: center; 
-        color: aliceblue;
+        justify-content: $center;
+        align-items: $center; 
+        color: $aliceblue;
         
         h4 {
-            font-weight: 400;
+            font-weight:$diez*40;
             i{
             color:aliceblue;
         }
-    }
+        }
    
     }
 

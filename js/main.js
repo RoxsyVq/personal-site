@@ -29,7 +29,7 @@ $(document).ready(function(){
     
 });
 
-// funcion para llmar a contacto{
+// funcion para llmar a contacto formulario flotante
 
 function llamarcontac(){
     $('#contacto-form').click(onclickContac);
