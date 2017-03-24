@@ -10,7 +10,8 @@ section#skill ul li {
   background-position: 20px 24px;
   border-radius: 3px;
   box-shadow: 1px 1px 12px -5px #999 inset;
-  color: #fff;
+  color: #000;
+  font-weight: bold;
   cursor: default;
   float: left;
   font-size: 15px;
@@ -23,7 +24,7 @@ section#skill ul li {
   text-align: left;
   text-shadow: 0px -1px 0px #fff;
   width: 100%;
-  margin-top: 5px; }
+  margin-top: 7px; }
 
 section#skill ul li .img {
   border: 15px solid transparent;
@@ -33,28 +34,25 @@ section#skill ul li .img {
   margin-right: 15px;
   margin-top: 0;
   background: #509b9e; }
-  section#skill ul li .img img {
-    width: 100%;
-    top: 0px; }
 
-section#skill .s_responsive img {
+section#skill .s_responsive .img {
   border-color: #509b9e; }
 
-section#skill .s_fotografia img {
+section#skill .s_fotografia .img {
   border-color: #509b9e; }
 
-section#skill .s_video img {
+section#skill .s_video .img {
   border-color: #509b9e; }
 
-section#skill .s_imagen img {
+section#skill .s_imagen .img {
   border-color: #509b9e; }
 
-section#skill .s_animacion img {
-  border-color: #509b9e; }
+section#skill .s_animacion .img {
+  border-color: #40787b; }
 
 /*lhtm*/
 section#skill .s_responsive {
-  background-image: linear-gradient(to right, transparent 32px, #509b9e 32px, #509b9e 99%, #49a72a 100%);
+  background-image: linear-gradient(to right, transparent 32px, aliceblue 32px, aliceblue 99%, aliceblue 100%);
   background-repeat: repeat-y;
   background-size: 95% auto;
   /*  animation: s_responsive 1.9s ease-in-out;*/ }
@@ -64,7 +62,7 @@ section#skill .s_responsive {
 
 /*fotografia*/
 section#skill .s_fotografia {
-  background-image: linear-gradient(to right, transparent 32px, #509b9e 32px, #509b9e 99%, #dd5632 100%);
+  background-image: linear-gradient(to right, transparent 32px, aliceblue 32px, aliceblue 99%, aliceblue 100%);
   background-repeat: repeat-y;
   background-size: 80% auto;
   /*  animation: s_fotografia 1.6s ease-in-out;*/ }
@@ -74,7 +72,7 @@ section#skill .s_fotografia {
 
 /*video*/
 section#skill .s_video {
-  background-image: linear-gradient(to right, rgba(38, 98, 158, 0.8) 0%, #509b9e 99%, #26629e 100%);
+  background-image: linear-gradient(to right, aliceblue 0%, aliceblue 99%, aliceblue 100%);
   background-repeat: repeat-y;
   background-size: 60% auto;
   /*  */ }
@@ -84,7 +82,7 @@ section#skill .s_video {
 
 /*imagen*/
 section#skill .s_imagen {
-  background-image: linear-gradient(to right, rgba(186, 58, 131, 0.8) 0%, rgba(186, 58, 131, 0.8) 99%, #ba3a83 100%);
+  background-image: linear-gradient(to right, aliceblue 0%, aliceblue 99%, aliceblue 100%);
   background-repeat: repeat-y;
   background-size: 90% auto;
   /*  animation: s_imagen 1.8s ease-in-out;*/ }
@@ -256,10 +254,10 @@ section#skill.s_animacion {
   overflow: hidden;
   margin-top: 50px;
   top: -50px;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(54, 72, 120, 0.6); }
   .hero img {
     width: 250px;
-    padding-top: 40px; }
+    padding-top: 130px !important; }
 
 /****************header*********/
 header {
@@ -382,8 +380,30 @@ section#box {
     overflow: visible; }
     #portafolio .main .slides {
       width: 100%; }
-      #portafolio .main .slides img {
-        width: 90%; }
+      #portafolio .main .slides .cont-img {
+        position: relative;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2; }
+        #portafolio .main .slides .cont-img img {
+          width: 100%; }
+      #portafolio .main .slides .cont-img:hover .hov2 {
+        background-size: cover;
+        opacity: 1; }
+      #portafolio .main .slides .cont-img:hover .hov3 {
+        background-size: cover;
+        opacity: 1; }
+      #portafolio .main .slides .cont-img:hover .hov1 {
+        background: rgba(0, 0, 0, 0.5) url(../pictures/whatsapp.png);
+        background-size: cover;
+        opacity: 1; }
+    #portafolio .main .opacity {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 20;
+      transition: all 0.5s;
+      background-size: cover; }
     #portafolio .main .slidesjs-pagination {
       background: #424242;
       list-style: none;
@@ -418,7 +438,7 @@ section#skill {
   margin-left: -655px;
   top: 0px;
   margin-top: 18px;
-  background: #fff; }
+  background: #63c3c2; }
   section#skill .calcular {
     height: 80%;
     top: 120px;
@@ -427,11 +447,13 @@ section#skill {
     section#skill .calcular #name-skil ul {
       margin-top: 35px; }
   section#skill .nivels .nivel1 {
-    left: 10%; }
+    left: 12.2%; }
   section#skill .nivels .nivel2 {
     left: 45%; }
   section#skill .nivels .nivel3 {
     left: 95%; }
+  section#skill .text {
+    color: aliceblue; }
 
 .nivel {
   position: absolute;
@@ -441,13 +463,14 @@ section#skill {
 .basic {
   position: absolute;
   width: 2px;
-  height: 100%;
-  background: red; }
+  height: 90%;
+  background: #dd7785;
+  z-index: 5; }
 
 .banner {
   position: absolute;
   padding: 6px 10px 5px;
-  background-color: crimson;
+  background-color: #e9727e;
   font-family: 'Montserrat';
   color: #FFF;
   font-size: 18px; }
@@ -477,6 +500,7 @@ section#about-me {
 
 .text {
   color: #292727;
+  font-weight: 600;
   font-family: 'Roboto Condensed';
   font-size: 22px;
   letter-spacing: 8px;
@@ -499,7 +523,7 @@ section#about-me {
 
 /******************contacto**************/
 #contacto {
-  background-color: darkred;
+  background-color: #dd7785;
    /*     .form-contact{
 //            width: 600px;
 //            height: 600px;
@@ -520,27 +544,30 @@ section#about-me {
   #contacto .container {
     padding-top: 30px;
     padding-bottom: 30px; }
-    #contacto .container .lest a .mini {
+    #contacto .container .lest #contacto-form .mini {
       text-transform: uppercase;
       font-family: "Montserrat";
       color: white; }
-    #contacto .container .lest a .sub {
+    #contacto .container .lest #contacto-form .sub {
       font-size: 18px;
       font-family: "Libre Baskerville";
       font-style: italic;
       font-weight: 400;
       color: #fff; }
-    #contacto .container .lest a .strong {
+    #contacto .container .lest #contacto-form .strong {
       font-family: "Montserrat";
       font-weight: 700;
       font-style: normal;
       font-size: 30px;
       margin: 5px auto; }
-    #contacto .container .lest a button {
+    #contacto .container .lest #contacto-form button {
       padding: 10px 30px;
       color: aliceblue;
       background: transparent;
       border-radius: 2px solid  #000; }
+  #contacto .carousel-inner .item {
+    width: 100%;
+    height: 360px; }
   #contacto .yo-mas {
     height: 360px; }
     #contacto .yo-mas .social {
@@ -551,15 +578,19 @@ section#about-me {
       margin: 0;
       padding: 0; }
       #contacto .yo-mas .social .redes {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(54, 72, 120, 0.8);
         text-align: center;
         height: 100%;
         top: -10;
         width: 100%;
         vertical-align: middle;
-        position: absolute; }
+        position: absolute;
+        color: snow; }
         #contacto .yo-mas .social .redes h1 {
-          margin-top: 60px; }
+          margin-top: 60px;
+          color: snow; }
+        #contacto .yo-mas .social .redes p {
+          color: snow; }
         #contacto .yo-mas .social .redes img {
           width: 60px; }
 
@@ -574,14 +605,18 @@ contac {
   opacity: 1;
   display: table; }
 
+/*************formulario flotante---*/
 #formulario {
-  z-index: 50;
+  z-index: 100;
   background: rgba(0, 0, 0, 0.6);
   position: fixed; }
   #formulario .form-contact {
     padding: 0px 50px 50px 50px;
     background: rgba(0, 0, 0, 0.9);
-    border-radius: 20px; }
+    border-radius: 20px;
+    color: white; }
+    #formulario .form-contact .glyphicon {
+      color: white; }
     #formulario .form-contact .email {
       background: url(../pictures/contact-email-gray.png) 20px center no-repeat transparent; }
     #formulario .form-contact .name {
@@ -619,8 +654,17 @@ contac {
 
 /************footer**********/
 footer {
-  height: 150px;
-  background: rgba(0, 0, 0, 0.5); }
+  height: 100px;
+  background: black; }
+  footer .pie-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue; }
+    footer .pie-pagina h4 {
+      font-weight: 400; }
+      footer .pie-pagina h4 i {
+        color: aliceblue; }
 
 /*************************hjgfjgj************/
 

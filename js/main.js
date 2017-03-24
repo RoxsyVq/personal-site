@@ -25,6 +25,7 @@ $(document).ready(function(){
   pause: false
 })
     llamarcontac();
+    volverForm();
     
 });
 
@@ -40,13 +41,13 @@ function onclickContac(evt){
    // alert('holiss');
     
 }
-/*function llamarform(){
-    $('#formulario').click(onclickform);
+function volverForm(){
+    $('#close').click(onclickform);
 }
 function onclickform(){
     $('#formulario').removeClass('visible');
 }
-*/
+
 
 
 

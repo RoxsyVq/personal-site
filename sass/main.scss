@@ -28,11 +28,11 @@ $diez:10px;
 	overflow: hidden;
     margin-top: $diez*5;
     top:-50px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(54,72,120,0.6);
    
     img{
         width: $diez*25;
-        padding-top:40px;
+        padding-top:130px !important;
        
         
     }
@@ -237,10 +237,48 @@ section#box{
     overflow: visible;
     .slides {
 	width:$with;
+        .cont-img{
+            position: relative;
+          background: rgba(0,0,0,0.8);
+            z-index: 2;
         img {
-	width:90%;
+	        width:100%;
+         }   
+        }
+        .cont-img:hover .hov2{
+            // background:rgba(0,0,0,0.5) url(../pictures/w);
+            background-size: cover;
+            opacity: 1;
+            
+            
+        }
+        .cont-img:hover .hov3{
+             //background:rgba(0,0,0,0.5) url(../pictures/whatsapp.png);
+            background-size: cover;
+            opacity: 1;
+            
+            
+        }
+        .cont-img:hover .hov1{
+             background:rgba(0,0,0,0.5) url(../pictures/whatsapp.png);
+            background-size: cover;
+            opacity: 1;
+            
+            
+        }
+        
 }
-}
+.opacity{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+   transition: all 0.5s;
+   
+    background-size: cover;
+        }
  .slidesjs-pagination {
 	background:#424242;
 	list-style:none;
@@ -289,9 +327,10 @@ section#skill{
     margin-left: -655px;
     top: 0px;
     margin-top: 18px;
-    background: #fff;
-    ///background: #509b9e;
-    
+     
+    background: #63c3c2 ;
+   //rgba(66,135,140,0.9);#509b9e
+    //rgba(233,114,126,1)
     .calcular{
         height: 80%;
         top: 120px;
@@ -305,7 +344,7 @@ section#skill{
 }
 .nivels{
 .nivel1{
-    left:10%;
+    left:12.2%;
 
 }
     .nivel2{
@@ -317,9 +356,13 @@ section#skill{
 
 
     }
- 
+    .text{
+        color:aliceblue;
+    }
     
 }
+
+
 .nivel{
     position: absolute;
     bottom: 0;
@@ -329,13 +372,14 @@ section#skill{
 .basic{
     position: absolute;
     width: 2px;
-    height: $with;
-    background:red;
+    height: 90%;
+    background:#dd7785;
+    z-index: 5;
         }
 .banner{
     position: absolute;
     padding: 6px 10px 5px;
-    background-color: crimson;
+    background-color:rgba(233,114,126,1);
     font-family: 'Montserrat';
     color: #FFF;
     font-size: 18px;
@@ -357,7 +401,7 @@ section#about-me {
 
 .svg-wrapper {
   height: 60px;
-	margin: 0 auto;
+  margin: 0 auto;
   position: relative;
   top: $with / 2;
   transform: translateY(-50%);
@@ -374,6 +418,7 @@ section#about-me {
 
 .text {
   color: #292727;
+  font-weight: 600;
   font-family: 'Roboto Condensed';
   font-size: 22px;
   letter-spacing: 8px;
@@ -403,20 +448,20 @@ section#about-me {
 #contacto{
    
    
-    background-color:darkred;
+    background-color:#dd7785;
+    //rgba(242,139,130,1)
     .container{
         padding-top: 30px;
         padding-bottom: 30px;
         .lest{
-            a{
+            #contacto-form{
             
-            .title{
-                
-                }
+            
             .mini{
                 text-transform: uppercase;
                 font-family: "Montserrat";
                 color: white;
+                
             }
             .sub{
                 font-size: 18px;
@@ -444,7 +489,15 @@ section#about-me {
           
         }
     }
-    
+    .carousel-inner .item{
+        width: 100%;
+        height: 360px;
+       
+            img{
+               
+            }
+        }
+  
     .yo-mas{
         height: 360px;
         .slider-mas{
@@ -461,16 +514,22 @@ section#about-me {
                 margin: 0;
                 padding: 0;
             .redes{
-                background: rgba(0,0,0,0.5);
+                background: rgba(54,72,120,0.8);
+                //rgba(70,100,128,0.8);
                 text-align: center;
                 height: 100%;
                 top:-10;
                 width: 100%;
                 vertical-align: middle;
                 position: absolute;
+                color: snow;
                 
                 h1 {
                     margin-top: 60px;
+                    color: snow;
+                }
+                p{
+                    color: snow;
                 }
                 img{
                     width: 60px;
@@ -514,8 +573,10 @@ contac{
     opacity: 1;
     display: table; 
 }
+
+/*************formulario flotante---*/
 #formulario{
-    z-index: 50;
+    z-index: 100;
     background: rgba(0,0,0,0.6);
 position: fixed;
     
@@ -524,6 +585,11 @@ position: fixed;
           padding: 0px 50px 50px 50px;
           background: rgba(0,0,0,0.9);  
           border-radius: 20px;
+        color: white;
+        .glyphicon{
+            color: white;
+            
+        }
        
         
 
@@ -578,8 +644,23 @@ position: fixed;
 /************footer**********/
 footer{
     @extend .strucSecciones;
-height:150px;
-    background: rgba(0,0,0,0.5);
+    height:100px;
+    background: black;
+    .pie-pagina{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        color: aliceblue;
+        
+        h4 {
+            font-weight: 400;
+            i{
+            color:aliceblue;
+        }
+    }
+   
+    }
+
 }
 
 
