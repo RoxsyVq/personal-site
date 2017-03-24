@@ -22,7 +22,7 @@ $transparent:transparent;
 @mixin strucSecciones{
     
     padding: 29px 0px;
-    margin-top: -20px;
+   // margin-top: 20px;
     width: 1310px;
     position: relative;
     left: $with / 2;
@@ -72,7 +72,9 @@ header{
     top:0;
     width: 100%;
     //background-color: rgba(0,0,0,0.6);
-
+    .navbar{
+        margin-bottom: 0px;
+    }
     
 .navbar-default {
     background-color: transparent;
@@ -99,7 +101,7 @@ header{
        
         color: aliceblue;
        
-        border-bottom-color: #f9333f;
+        border-bottom-color: $rosado;
        }
     } 
   }
@@ -178,7 +180,7 @@ section#about-me{
       display: table-cell;
       vertical-align: middle;
       .svg-wrapper{
-        margin-top:100px;
+        
         margin-bottom: 40px;
       }
      .me img{
@@ -252,7 +254,7 @@ section#box{
 }
 #portafolio{
 	@include strucSecciones;
-    height: 602px;
+    height: 530px;
     background:url("../pictures/pcs.jpg");
     .main {
         width: 495px;
@@ -366,6 +368,7 @@ section#skill{
         }
 
 }
+
 .nivels{
     .nivel1{
         left:12.2%;
@@ -429,6 +432,7 @@ section#about-me {
   top: $with / 2;
   transform: translateY(-50%);
   width: 320px;
+  margin-top: 65px;
 }
 
 .shape {
@@ -436,7 +440,7 @@ section#about-me {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 8px;
-  stroke: #19f6e8;
+  stroke: $rosado;
 }
 
 .text {
@@ -633,13 +637,17 @@ contac{
 }
 /************footer**********/
 footer{
-    @include strucSecciones;
-    height:100px;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height:50px;
     background: $negro;
+    position: relative;
+    margin-top:-10px;
     .pie-pagina{
-        display: flex;
-        justify-content: $center;
-        align-items: $center; 
+       
+         
         color: $aliceblue;
         
         h4 {

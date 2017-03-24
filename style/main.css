@@ -266,6 +266,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%; }
+  header .navbar {
+    margin-bottom: 0px; }
   header .navbar-default {
     background-color: transparent;
     border-color: transparent; }
@@ -284,7 +286,7 @@ header {
         letter-spacing: 1px; }
         header .navbar-default .navbar-nav > li a:hover {
           color: aliceblue;
-          border-bottom-color: #f9333f; }
+          border-bottom-color: #e9727e; }
   header .navbar-brand img {
     width: 40px;
     top: 10px;
@@ -327,7 +329,6 @@ section#body {
 /*********about me*************/
 section#about-me {
   padding: 29px 0px;
-  margin-top: -20px;
   width: 1310px;
   position: relative;
   left: 50%;
@@ -338,7 +339,6 @@ section#about-me {
     display: table-cell;
     vertical-align: middle; }
     section#about-me .contain .svg-wrapper {
-      margin-top: 100px;
       margin-bottom: 40px; }
     section#about-me .contain .me img {
       width: 150px; }
@@ -378,7 +378,6 @@ section#about-me {
 /**********************portafolio**************/
 section#box {
   padding: 29px 0px;
-  margin-top: -20px;
   width: 1310px;
   position: relative;
   left: 50%;
@@ -390,12 +389,11 @@ section#box {
 
 #portafolio {
   padding: 29px 0px;
-  margin-top: -20px;
   width: 1310px;
   position: relative;
   left: 50%;
   margin-left: -655px;
-  height: 602px;
+  height: 530px;
   background: url("../pictures/pcs.jpg"); }
   #portafolio .main {
     width: 495px;
@@ -514,14 +512,15 @@ section#about-me {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 320px; }
+  width: 320px;
+  margin-top: 65px; }
 
 .shape {
   fill: transparent;
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 8px;
-  stroke: #19f6e8; }
+  stroke: #e9727e; }
 
 .text {
   color: #292727;
@@ -607,7 +606,6 @@ section#about-me {
 
 contac {
   padding: 29px 0px;
-  margin-top: -20px;
   width: 1310px;
   position: relative;
   left: 50%;
@@ -673,18 +671,15 @@ contac {
 
 /************footer**********/
 footer {
-  padding: 29px 0px;
-  margin-top: -20px;
-  width: 1310px;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #000;
   position: relative;
-  left: 50%;
-  margin-left: -655px;
-  height: 100px;
-  background: #000; }
+  margin-top: -10px; }
   footer .pie-pagina {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: aliceblue; }
     footer .pie-pagina h4 {
       font-weight: 400px; }
