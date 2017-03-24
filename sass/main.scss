@@ -27,14 +27,64 @@ $diez:10px;
 	text-align: $center;
 	overflow: hidden;
     margin-top: $diez*5;
-    top:0px;
+    top:-50px;
+    background-color: rgba(0,0,0,0.4);
    
     img{
         width: $diez*25;
+        padding-top:40px;
        
         
     }
 }
+
+/****************header*********/
+header{
+    z-index: 100;
+    position: fixed;
+    top:0;
+    width: 100%;
+    //background-color: rgba(0,0,0,0.6);
+
+    
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+.navbar-toggle {
+     border-color: transparent; 
+        }
+.navbar-toggle:hover {
+    background-color: transparent;
+        }
+    .navbar-nav>li{
+            padding: 15px 6px 15px 5px;
+   
+    a{
+        color: aliceblue;
+        font-weight: bold;
+        padding-bottom: 2px;
+        font-weight: bolder;
+        border-bottom: 2px solid transparent;
+        letter-spacing: 1px;
+       
+        
+    }
+    }
+    .navbar-nav>li>a:hover{
+       
+        color: aliceblue;
+       
+        border-bottom-color: #f9333f;
+        
+    }
+      }
+ .navbar-brand  img{
+    width: 60px;
+    }
+    
+      
+ }
+// parallax
 
 
 #contenedor_general{
@@ -240,6 +290,7 @@ section#skill{
     top: 0px;
     margin-top: 18px;
     background: #fff;
+    ///background: #509b9e;
     
     .calcular{
         height: 80%;
@@ -352,18 +403,20 @@ section#about-me {
 #contacto{
    
    
-    background-color:aqua;
+    background-color:darkred;
     .container{
+        padding-top: 30px;
+        padding-bottom: 30px;
         .lest{
-            
-               height: 200PX; 
+            a{
             
             .title{
                 
                 }
-            .min{
+            .mini{
                 text-transform: uppercase;
                 font-family: "Montserrat";
+                color: white;
             }
             .sub{
                 font-size: 18px;
@@ -377,19 +430,52 @@ section#about-me {
                 font-weight: 700;
                 font-style: normal;
                 font-size: 30px;
-                margin: 5px auto;            
+                margin: 5px auto;
+                
             }
+                button{
+                    padding: 10px 30px;
+                    color: aliceblue;
+                    background: transparent;
+                    border-radius: 2px solid  #000;
+                    
+                }
+          }
           
         }
     }
     
     .yo-mas{
-        height: 420px;
+        height: 360px;
+        .slider-mas{
+            
+            
+        }
         
      
         .social{
-            height: 100%;
-             background-color: black;
+                background:90% url("../pictures/3.jpg");
+                background-size: cover;
+                height: 100%;
+                background-color: transparent;
+                margin: 0;
+                padding: 0;
+            .redes{
+                background: rgba(0,0,0,0.5);
+                text-align: center;
+                height: 100%;
+                top:-10;
+                width: 100%;
+                vertical-align: middle;
+                position: absolute;
+                
+                h1 {
+                    margin-top: 60px;
+                }
+                img{
+                    width: 60px;
+                }
+            }
         }
         
     }
@@ -415,13 +501,15 @@ section#about-me {
 
 contac{
     @extend .strucSecciones;
-    height: 640px; 
+    height: 580px; 
     display: none;
     opacity: 0;
     bottom: 0;
+    padding-bottom: 0px;
     
    
 }
+
 .visible{
     opacity: 1;
     display: table; 
@@ -494,51 +582,7 @@ height:150px;
     background: rgba(0,0,0,0.5);
 }
 
-/****************header*********/
-header{
-    z-index: 100;
-    position: fixed;
-    top:0;
-    width: 100%;
 
-    
-.navbar-default {
-    background-color: transparent;
-    border-color: transparent;
-.navbar-toggle {
-     border-color: transparent; 
-        }
-.navbar-toggle:hover {
-    background-color: transparent;
-        }
-    .navbar-nav>li{
-            padding: 15px 6px 15px 5px;
-   
-    a{
-        color: aliceblue;
-        font-weight: bold;
-        padding-bottom: 2px;
-        font-weight: bolder;
-        border-bottom: 2px solid transparent;
-        letter-spacing: 1px;
-       
-        
-    }
-    }
-    .navbar-nav>li>a:hover{
-       
-        color: aliceblue;
-       
-        border-bottom-color: #f9333f;
-        
-    }
-      }
- .navbar-brand  img{
-    width: 60px;
-    }
-    
-      
- }
 
 /*************************hjgfjgj************/
 

@@ -6,16 +6,15 @@ section#skill ul {
   width: 100%; }
 
 section#skill ul li {
-  background-color: #e6e6e6;
-  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  height: 30px;
   background-position: 20px 24px;
   border-radius: 3px;
   box-shadow: 1px 1px 12px -5px #999 inset;
   color: #fff;
   cursor: default;
   float: left;
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 15px;
+  line-height: 20px;
   list-style-type: none;
   margin: 0 0 10px;
   opacity: 0.8;
@@ -24,34 +23,38 @@ section#skill ul li {
   text-align: left;
   text-shadow: 0px -1px 0px #fff;
   width: 100%;
-  margin-top: 15px; }
+  margin-top: 5px; }
 
-section#skill ul li img {
-  border: 10px solid transparent;
-  border-radius: 3px 0 0 3px;
+section#skill ul li .img {
+  border: 15px solid transparent;
+  border-radius: 1px 0 0 1px;
   box-shadow: 1px 0 1px -1px #d9d9d9;
   float: left;
   margin-right: 15px;
-  margin-top: 0; }
+  margin-top: 0;
+  background: #509b9e; }
+  section#skill ul li .img img {
+    width: 100%;
+    top: 0px; }
 
 section#skill .s_responsive img {
-  border-color: #49a72a; }
+  border-color: #509b9e; }
 
 section#skill .s_fotografia img {
-  border-color: #d73007; }
+  border-color: #509b9e; }
 
 section#skill .s_video img {
-  border-color: #26629e; }
+  border-color: #509b9e; }
 
 section#skill .s_imagen img {
-  border-color: #ba3a83; }
+  border-color: #509b9e; }
 
 section#skill .s_animacion img {
-  border-color: #6b6b6b; }
+  border-color: #509b9e; }
 
 /*lhtm*/
 section#skill .s_responsive {
-  background-image: linear-gradient(to right, transparent 32px, rgba(73, 167, 42, 0.8) 32px, rgba(73, 167, 42, 0.8) 99%, #49a72a 100%);
+  background-image: linear-gradient(to right, transparent 32px, #509b9e 32px, #509b9e 99%, #49a72a 100%);
   background-repeat: repeat-y;
   background-size: 95% auto;
   /*  animation: s_responsive 1.9s ease-in-out;*/ }
@@ -61,7 +64,7 @@ section#skill .s_responsive {
 
 /*fotografia*/
 section#skill .s_fotografia {
-  background-image: linear-gradient(to right, transparent 32px, rgba(221, 86, 50, 0.8) 32px, rgba(221, 86, 50, 0.8) 99%, #dd5632 100%);
+  background-image: linear-gradient(to right, transparent 32px, #509b9e 32px, #509b9e 99%, #dd5632 100%);
   background-repeat: repeat-y;
   background-size: 80% auto;
   /*  animation: s_fotografia 1.6s ease-in-out;*/ }
@@ -71,7 +74,7 @@ section#skill .s_fotografia {
 
 /*video*/
 section#skill .s_video {
-  background-image: linear-gradient(to right, rgba(38, 98, 158, 0.8) 0%, rgba(38, 98, 158, 0.8) 99%, #26629e 100%);
+  background-image: linear-gradient(to right, rgba(38, 98, 158, 0.8) 0%, #509b9e 99%, #26629e 100%);
   background-repeat: repeat-y;
   background-size: 60% auto;
   /*  */ }
@@ -124,6 +127,10 @@ section#skill.s_animacion {
     background-size: 0% auto; }
   100% {
     background-size: 70% auto; } }
+.icon-linkedin-with-circle:before {
+  content: "\e900";
+  color: white; }
+
 #mouse-icon {
   width: 17px;
   height: 25px;
@@ -213,6 +220,9 @@ section#skill.s_animacion {
     top: 20px;
     opacity: 0; } }
 /***********************tirulo gneral*******/
+#body {
+  margin-top: 610px !important; }
+
 .bubbles {
   font-family: arial;
   position: fixed;
@@ -245,9 +255,39 @@ section#skill.s_animacion {
   text-align: center;
   overflow: hidden;
   margin-top: 50px;
-  top: 0px; }
+  top: -50px;
+  background-color: rgba(0, 0, 0, 0.4); }
   .hero img {
-    width: 250px; }
+    width: 250px;
+    padding-top: 40px; }
+
+/****************header*********/
+header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header .navbar-default {
+    background-color: transparent;
+    border-color: transparent; }
+    header .navbar-default .navbar-toggle {
+      border-color: transparent; }
+    header .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+    header .navbar-default .navbar-nav > li {
+      padding: 15px 6px 15px 5px; }
+      header .navbar-default .navbar-nav > li a {
+        color: aliceblue;
+        font-weight: bold;
+        padding-bottom: 2px;
+        font-weight: bolder;
+        border-bottom: 2px solid transparent;
+        letter-spacing: 1px; }
+    header .navbar-default .navbar-nav > li > a:hover {
+      color: aliceblue;
+      border-bottom-color: #f9333f; }
+  header .navbar-brand img {
+    width: 60px; }
 
 #contenedor_general {
   position: fixed;
@@ -459,7 +499,7 @@ section#about-me {
 
 /******************contacto**************/
 #contacto {
-  background-color: aqua;
+  background-color: darkred;
    /*     .form-contact{
 //            width: 600px;
 //            height: 600px;
@@ -477,34 +517,58 @@ section#about-me {
             backface-visibility: hidden;
         }
     */ }
-  #contacto .container .lest {
-    height: 200PX; }
-    #contacto .container .lest .min {
+  #contacto .container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    #contacto .container .lest a .mini {
       text-transform: uppercase;
-      font-family: "Montserrat"; }
-    #contacto .container .lest .sub {
+      font-family: "Montserrat";
+      color: white; }
+    #contacto .container .lest a .sub {
       font-size: 18px;
       font-family: "Libre Baskerville";
       font-style: italic;
       font-weight: 400;
       color: #fff; }
-    #contacto .container .lest .strong {
+    #contacto .container .lest a .strong {
       font-family: "Montserrat";
       font-weight: 700;
       font-style: normal;
       font-size: 30px;
       margin: 5px auto; }
+    #contacto .container .lest a button {
+      padding: 10px 30px;
+      color: aliceblue;
+      background: transparent;
+      border-radius: 2px solid  #000; }
   #contacto .yo-mas {
-    height: 420px; }
+    height: 360px; }
     #contacto .yo-mas .social {
+      background: 90% url("../pictures/3.jpg");
+      background-size: cover;
       height: 100%;
-      background-color: black; }
+      background-color: transparent;
+      margin: 0;
+      padding: 0; }
+      #contacto .yo-mas .social .redes {
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        height: 100%;
+        top: -10;
+        width: 100%;
+        vertical-align: middle;
+        position: absolute; }
+        #contacto .yo-mas .social .redes h1 {
+          margin-top: 60px; }
+        #contacto .yo-mas .social .redes img {
+          width: 60px; }
 
 contac {
-  height: 640px;
+  height: 580px;
   display: none;
   opacity: 0;
-  bottom: 0; }
+  bottom: 0;
+  padding-bottom: 0px; }
 
 .visible {
   opacity: 1;
@@ -557,34 +621,6 @@ contac {
 footer {
   height: 150px;
   background: rgba(0, 0, 0, 0.5); }
-
-/****************header*********/
-header {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  width: 100%; }
-  header .navbar-default {
-    background-color: transparent;
-    border-color: transparent; }
-    header .navbar-default .navbar-toggle {
-      border-color: transparent; }
-    header .navbar-default .navbar-toggle:hover {
-      background-color: transparent; }
-    header .navbar-default .navbar-nav > li {
-      padding: 15px 6px 15px 5px; }
-      header .navbar-default .navbar-nav > li a {
-        color: aliceblue;
-        font-weight: bold;
-        padding-bottom: 2px;
-        font-weight: bolder;
-        border-bottom: 2px solid transparent;
-        letter-spacing: 1px; }
-    header .navbar-default .navbar-nav > li > a:hover {
-      color: aliceblue;
-      border-bottom-color: #f9333f; }
-  header .navbar-brand img {
-    width: 60px; }
 
 /*************************hjgfjgj************/
 

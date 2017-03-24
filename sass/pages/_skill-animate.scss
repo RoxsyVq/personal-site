@@ -6,16 +6,18 @@ section#skill ul {
 }
 
 section#skill ul li {
-  background-color: #e6e6e6;
-  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    height: 30px;
+ // background-color: rgba(191, 191, 191, 0);
+    
+  //background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
   background-position: 20px 24px;
   border-radius: 3px;
   box-shadow: 1px 1px 12px -5px #999 inset;
   color: #fff;
   cursor: default;
   float: left;
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 15px;
+  line-height: 20px;
   list-style-type: none;
   margin: 0 0 10px;
   opacity: 0.8;
@@ -24,41 +26,46 @@ section#skill ul li {
   text-align: left;
   text-shadow: 0px -1px 0px #fff;
   width: 100%;
-margin-top: 15px;
+margin-top: 5px;
 }
 
-section#skill ul li img {
-  border: 10px solid transparent;
-  border-radius: 3px 0 0 3px;
+section#skill ul li .img {
+  border: 15px solid transparent;
+  border-radius: 1px 0 0 1px;
   box-shadow: 1px 0 1px -1px #d9d9d9;
   float: left;
-  margin-right: 15px;
-  margin-top: 0;
+  margin-right: 15px; 
+    margin-top: 0;
+    background: #509b9e;
+    img{ 
+        width: 100%;
+        top: 0px;
+    }
 }
 
 section#skill .s_responsive img {
-  border-color: rgba(73, 167, 42, 1);
+  border-color: #509b9e;
 }
 
 section#skill .s_fotografia img {
-  border-color: rgba(215, 48, 7, 1);
+  border-color: #509b9e;
 }
 
 section#skill .s_video img {
-  border-color: rgba(38, 98, 158, 1);
+  border-color: #509b9e;
 }
 
 section#skill .s_imagen img {
-  border-color: rgba(186, 58, 131, 1);
+  border-color: #509b9e;
 }
 
 section#skill .s_animacion img {
-  border-color: rgba(107, 107, 107, 1);
+  border-color: #509b9e;
 }
 
 /*lhtm*/
 section#skill .s_responsive {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 32px, rgba(73, 167, 42, 0.8) 32px, rgba(73, 167, 42, 0.8) 99%, rgba(73, 167, 42, 1) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 32px, #509b9e 32px, #509b9e 99%, rgba(73, 167, 42, 1) 100%);
   background-repeat: repeat-y;
   background-size: 95% auto;
 /*  animation: s_responsive 1.9s ease-in-out;*/
@@ -69,7 +76,7 @@ section#skill .s_responsive {
 
 /*fotografia*/
 section#skill .s_fotografia {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 32px, rgba(221, 86, 50, 0.8) 32px, rgba(221, 86, 50, 0.8) 99%, rgba(221, 86, 50, 1) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 32px, #509b9e 32px, #509b9e 99%, rgba(221, 86, 50, 1) 100%);
   background-repeat: repeat-y;
   background-size: 80% auto;
 /*  animation: s_fotografia 1.6s ease-in-out;*/
@@ -79,7 +86,7 @@ section#skill .s_fotografia {
 }
 /*video*/
 section#skill .s_video {
-  background-image: linear-gradient(to right, rgba(38, 98, 158, 0.8) 0%, rgba(38, 98, 158, 0.8) 99%, rgba(38, 98, 158, 1) 100%);
+  background-image: linear-gradient(to right, rgba(38, 98, 158, 0.8) 0%, #509b9e 99%, rgba(38, 98, 158, 1) 100%);
   background-repeat: repeat-y;
   background-size: 60% auto;
 /*  */
@@ -130,4 +137,11 @@ section#skill.s_animacion {
 @keyframes s_animacion {
   0% {background-size: 0% auto;}
   100% {background-size: 70% auto;}
+}
+
+
+
+.icon-linkedin-with-circle:before {
+  content: "\e900";
+    color: white;
 }
