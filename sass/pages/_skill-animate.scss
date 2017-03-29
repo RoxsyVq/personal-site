@@ -32,12 +32,13 @@ margin-top: 7px;
 
 section#skill ul li .img {
   border: 15px solid transparent;
-  border-radius: 1px 0 0 1px;
-  box-shadow: 1px 0 1px -1px #d9d9d9;
-  float: left;
+  
   margin-right: 15px; 
     margin-top: 0;
     background: #509b9e;
+    img{
+         width:28px;
+    }
     
     }
 

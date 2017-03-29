@@ -1,5 +1,6 @@
 @import "pages/_skill-animate";
 @import "pages/_style-scroll" ;
+@import "pages/_responsive";
 
 
 
@@ -19,10 +20,11 @@ $blanco:#fff;
 $center:center;
 $aliceblue:aliceblue;
 $transparent:transparent;
-@mixin strucSecciones{
+
+@mixin strucSecciones(){
     
     padding: 29px 0px;
-   // margin-top: 20px;
+    margin-top: 20px;
     width: 1310px;
     position: relative;
     left: $with / 2;
@@ -134,6 +136,7 @@ header{
 	overflow: hidden;
    
     .slider{
+            
         .slidesjs-pagination, .slidesjs-navigation, .slidesjs-stop{
             display: none;
             
@@ -145,6 +148,7 @@ section#body{
 	width: $with;
 	min-height: $diez*70;
 	overflow: hidden;
+    margin-top: 610px ;
 
 
 section#scrolldown{
@@ -257,7 +261,7 @@ section#box{
     height: 530px;
     background:url("../pictures/pcs.jpg");
     .main {
-        width: 495px;
+        width: 485px;
         height: 279px;
         margin: 0px auto;
         padding-left: 15px;
@@ -295,6 +299,7 @@ section#box{
         }
         
 }
+        
 .opacity{
     position: absolute;
     
@@ -353,17 +358,17 @@ section#skill{
     left: 50%;
     margin-left: -655px;
     top: 0px;
-    margin-top: 18px;
-    background: #63c3c2 ;
-   //rgba(66,135,140,0.9);#509b9e
+    //margin-top: 18px;
+    background:#509b9e  ;
+   //rgba(66,135,140,0.9);#63c3c2
     //rgba(233,114,126,1)
     .calcular{
         height: 80%;
-        top: 120px;
+        top: 145px;
         position: absolute;
         width: 80%;
             #name-skil ul{
-                    margin-top: 35px;
+                    margin-top: 40px;
    
         }
 
@@ -371,7 +376,7 @@ section#skill{
 
 .nivels{
     .nivel1{
-        left:12.2%;
+        left:13.5%;
 
     }
     .nivel2{
@@ -401,6 +406,7 @@ section#skill{
     height: 90%;
     background:#dd7785;
     z-index: 5;
+    margin-top: 30px
         }
 .banner{
     position: absolute;
@@ -409,6 +415,7 @@ section#skill{
     font-family: 'Montserrat';
     color: #FFF;
     font-size: 18px;
+    margin-top: 30px
 }
 
 
@@ -529,7 +536,7 @@ section#about-me {
                 margin: 0;
                 padding: 0;
             .redes{
-                background: rgba(54,72,120,0.8);
+                background: rgba(aliceblue,0.7);
                 //rgba(70,100,128,0.8);
                 text-align: center;
                 height: 100%;
@@ -537,20 +544,21 @@ section#about-me {
                 width: 100%;
                 vertical-align: middle;
                 position: absolute;
-                color: snow;
+                color: $negro;
                 
                 h1 {
                     margin-top: 60px;
-                    color: snow;
+                    color: $negro;
                 }
                 p{
-                    color: snow;
+                    color: $negro;
                 }
                 img{
                     width: 60px;
                 }
             }
         }
+       
         
     }
    
@@ -642,7 +650,7 @@ footer{
     justify-content: center;
     align-items: center;
     height:50px;
-    background: $negro;
+   // background: rgba(#509b9e, 0.6);
     position: relative;
     margin-top:-10px;
     .pie-pagina{
@@ -661,8 +669,26 @@ footer{
 
 }
 
+/*********************mediA********/
+@media screen and (max-width: 1900px) {
+    #body{
+        margin-top: 1500px;
+    }   
+    .slider{
+       height: 100%;
+    }
+    h4{
+        font-size: 50px;
+    }
+    
+
+}
+
+/**********roxsaaa*********x********/
+///
 
 
-/*************************hjgfjgj************/
+/*************************hjgfjgj****
+sioasiauiadaidasi********/
 
 
