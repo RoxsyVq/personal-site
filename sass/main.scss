@@ -24,7 +24,7 @@ $transparent:transparent;
 @mixin strucSecciones(){
     
     padding: 29px 0px;
-    margin-top: 20px;
+  
     width: 1310px;
     position: relative;
     left: $with / 2;
@@ -53,18 +53,10 @@ $transparent:transparent;
    position:$post-fix;
     width: $with;
 	height: $with;
-	text-align: $center;
-	overflow: hidden;
-    margin-top: $diez*5;
-    top:-50px;
+	
     background-color: rgba(54,72,120,0.6);
    
-    img{
-        width: $diez*25;
-        padding-top:130px !important;
-       
-        
-    }
+    
 }
 
 /****************header*********/
@@ -147,6 +139,7 @@ section#body{
 	width: $with;
 	min-height: $diez*70;
 	overflow: hidden;
+   
 
 
 section#scrolldown{
@@ -340,9 +333,7 @@ section#box{
 }
 
 
- .active {
-	background:#000;
-}
+ 
 
  
 
@@ -355,11 +346,17 @@ section#skill{
     position: relative;
     left: 50%;
     margin-left: -655px;
-    top: 0px;
+    margin-top: -20px;
     //margin-top: 18px;
     background:#509b9e  ;
    //rgba(66,135,140,0.9);#63c3c2
     //rgba(233,114,126,1)
+    .title-1{
+        .svg-wrapper{
+            margin-top: -50px !important;
+        }
+        
+    }
     .calcular{
         height: 80%;
         top: 145px;
@@ -668,56 +665,41 @@ footer{
 }
 
 /*********************mediA*******/
-@media screen and (max-width: 800px) {
-    #body{
-        margin-top: 1500px;
-    }   
-    .slider2{
-       height: 100%;
-        width: 150%;
-        margin-right: 40%;
-        img{
-           height: 1524px;
-            
-        }
-    }
-    h4{
-        font-size: 50px;
-    }
-    .slidesjs-container{
-        overflow: visible !important;
-    }
-    .hero{
-        img{
-            padding-top: 400px !important;
-            width: 350px;
-        }
-    }
-    .bubbles{
-        margin-top: 50px;
-        margin-left: 22%;
-        h1{
-           font-size: 50px; 
-        }
-    }
-    
-    section#about-me{
-        height: 1524 !important;
-    }
-    header{
-        font-size: 25px;
-        font-weight: 600;
-        .navbar-default{
-            .navbar-nav>li{
-                padding: 10px  3px;
-                a{
-                    padding-top: 10px;
-                }
-            }
-        }
-        
-}
-}
+//@media screen and (max-width: 800px) {
+//    #body{
+//        margin-top: 100vh;
+//    }   
+//    .slider2{
+//       height: 100vh;
+//        width: 600%;
+//       
+//       
+//    }
+//    h4{
+//        font-size: 50px;
+//    }
+//    .slidesjs-container{
+//        overflow: visible !important;
+//    }
+//    .hero{
+//        img{
+//            padding-top: 400px !important;
+//            width: 350px;
+//        }
+//    }
+//    .bubbles{
+//        margin-top: 50px;
+//        margin-left: 22%;
+//        h1{
+//           font-size: 50px; 
+//        }
+//    }
+//    
+//    section#about-me{
+//        height: 1524 !important;
+//    }
+//    
+//}
 
 
 

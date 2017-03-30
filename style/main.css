@@ -219,7 +219,7 @@ section#skill.s_animacion {
     opacity: 0; } }
 /***********************tirulo gneral*******/
 #body {
-  margin-top: 610px; }
+  margin-top: 0px; }
 
 .bubbles {
   font-family: arial;
@@ -250,10 +250,6 @@ section#skill.s_animacion {
   position: fixed;
   width: 100%;
   height: 100%;
-  text-align: center;
-  overflow: hidden;
-  margin-top: 50px;
-  top: -50px;
   background-color: rgba(54, 72, 120, 0.6); }
   .hero img {
     width: 250px;
@@ -328,7 +324,6 @@ section#body {
 /*********about me*************/
 section#about-me {
   padding: 29px 0px;
-  margin-top: 20px;
   width: 1310px;
   position: relative;
   left: 50%;
@@ -378,7 +373,6 @@ section#about-me {
 /**********************portafolio**************/
 section#box {
   padding: 29px 0px;
-  margin-top: 20px;
   width: 1310px;
   position: relative;
   left: 50%;
@@ -390,7 +384,6 @@ section#box {
 
 #portafolio {
   padding: 29px 0px;
-  margin-top: 20px;
   width: 1310px;
   position: relative;
   left: 50%;
@@ -450,9 +443,6 @@ section#box {
       padding: 5px 8px;
       float: right; }
 
-.active {
-  background: #000; }
-
 /***************************skill********************/
 section#skill {
   height: 670px;
@@ -461,8 +451,10 @@ section#skill {
   position: relative;
   left: 50%;
   margin-left: -655px;
-  top: 0px;
+  margin-top: -20px;
   background: #509b9e; }
+  section#skill .title-1 .svg-wrapper {
+    margin-top: -50px !important; }
   section#skill .calcular {
     height: 80%;
     top: 145px;
@@ -609,7 +601,6 @@ section#about-me {
 
 contac {
   padding: 29px 0px;
-  margin-top: 20px;
   width: 1310px;
   position: relative;
   left: 50%;
@@ -690,42 +681,5 @@ footer {
         color: aliceblue; }
 
 /*********************mediA*******/
-@media screen and (max-width: 800px) {
-  #body {
-    margin-top: 1500px; }
-
-  .slider2 {
-    height: 100%;
-    width: 150%;
-    margin-right: 40%; }
-    .slider2 img {
-      height: 1524px; }
-
-  h4 {
-    font-size: 50px; }
-
-  .slidesjs-container {
-    overflow: visible !important; }
-
-  .hero img {
-    padding-top: 400px !important;
-    width: 350px; }
-
-  .bubbles {
-    margin-top: 50px;
-    margin-left: 22%; }
-    .bubbles h1 {
-      font-size: 50px; }
-
-  section#about-me {
-    height: 1524 !important; }
-
-  header {
-    font-size: 25px;
-    font-weight: 600; }
-    header .navbar-default .navbar-nav > li {
-      padding: 10px  3px; }
-      header .navbar-default .navbar-nav > li a {
-        padding-top: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
