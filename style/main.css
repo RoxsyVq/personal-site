@@ -135,7 +135,7 @@ section#skill.s_animacion {
   display: block;
   margin: -20px 0 0 -7px;
   border: 3px solid #fff;
-  position: fixed;
+  position: absolute;
   z-index: 700;
   opacity: 0.5;
   left: 50%;
@@ -147,7 +147,7 @@ section#skill.s_animacion {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
 
-#mouse-icon:before {
+#mouse-icon::before {
   content: 'SCROLL';
   width: 80px;
   display: block;
@@ -183,7 +183,7 @@ section#skill.s_animacion {
   width: 5px;
   height: 6px;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 2px;
   left: 3px;
   background: #fff;
@@ -312,8 +312,7 @@ header {
 section#body {
   width: 100%;
   min-height: 700px;
-  overflow: hidden;
-  margin-top: 610px; }
+  overflow: hidden; }
   section#body section#scrolldown {
     margin: auto;
     width: 200px;
@@ -690,18 +689,43 @@ footer {
       footer .pie-pagina h4 i {
         color: aliceblue; }
 
-/*********************mediA********/
-@media screen and (max-width: 1900px) {
+/*********************mediA*******/
+@media screen and (max-width: 800px) {
   #body {
     margin-top: 1500px; }
 
-  .slider {
-    height: 100%; }
+  .slider2 {
+    height: 100%;
+    width: 150%;
+    margin-right: 40%; }
+    .slider2 img {
+      height: 1524px; }
 
   h4 {
-    font-size: 50px; } }
-/**********roxsaaa*********x********/
-/*************************hjgfjgj****
-sioasiauiadaidasi********/
+    font-size: 50px; }
+
+  .slidesjs-container {
+    overflow: visible !important; }
+
+  .hero img {
+    padding-top: 400px !important;
+    width: 350px; }
+
+  .bubbles {
+    margin-top: 50px;
+    margin-left: 22%; }
+    .bubbles h1 {
+      font-size: 50px; }
+
+  section#about-me {
+    height: 1524 !important; }
+
+  header {
+    font-size: 25px;
+    font-weight: 600; }
+    header .navbar-default .navbar-nav > li {
+      padding: 10px  3px; }
+      header .navbar-default .navbar-nav > li a {
+        padding-top: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
