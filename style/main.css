@@ -218,9 +218,6 @@ section#skill.s_animacion {
     top: 20px;
     opacity: 0; } }
 /***********************tirulo gneral*******/
-#body {
-  margin-top: 0px; }
-
 .bubbles {
   font-family: arial;
   position: fixed;
@@ -305,7 +302,8 @@ header {
 section#body {
   width: 100%;
   min-height: 700px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: -80px !important; }
   section#body section#scrolldown {
     margin: auto;
     width: 200px;
