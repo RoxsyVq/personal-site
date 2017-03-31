@@ -1,3 +1,37 @@
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1025px) {
+    #about-me{
+        height: 100vh  !important;
+    padding-top: 100px !important;
+        font-size: 30px;
+        .contain .svg-wrapper{
+            font-size: 50px;
+            .text{
+                font-size: 30px;
+                line-height: 0px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+    .contain .me img{
+        width: 250px !important;
+    }
+    .contain .contain2 .meo .name .date 
+    {
+            margin-top: 20px;
     
+    #correo{
+        font-size: 23px !important;
+    }
+    #name{
+        font-size: 23px !important;
+        margin-top: 50px;
+    }
+    }
+    #skill{
+         height: 100vh  !important;
+        
+    }
+    
+
 }

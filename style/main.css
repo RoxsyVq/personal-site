@@ -237,6 +237,32 @@ section#skill.s_animacion {
   background-color: #fff;
   z-index: 1; }
 
+@media only screen and (max-width: 1025px) {
+  #about-me {
+    height: 100vh  !important;
+    padding-top: 100px !important;
+    font-size: 30px; }
+    #about-me .contain .svg-wrapper {
+      font-size: 50px; }
+      #about-me .contain .svg-wrapper .text {
+        font-size: 30px;
+        line-height: 0px;
+        font-weight: bold;
+        text-align: center; }
+
+  .contain .me img {
+    width: 250px !important; }
+
+  .contain .contain2 .meo .name .date {
+    margin-top: 20px; }
+    .contain .contain2 .meo .name .date #correo {
+      font-size: 23px !important; }
+    .contain .contain2 .meo .name .date #name {
+      font-size: 23px !important;
+      margin-top: 50px; }
+
+  #skill {
+    height: 100vh  !important; } }
 * {
   margin: 0;
   padding: 0;
@@ -372,7 +398,6 @@ section#box {
   position: relative;
   left: 50%;
   margin-left: -655px;
-  margin-top: 20px;
   background: #fff;
   padding-top: 30px;
   height: 150px; }
