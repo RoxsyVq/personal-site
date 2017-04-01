@@ -280,7 +280,13 @@ section#skill.s_animacion {
         font-size: 30px;
         line-height: 0px;
         font-weight: bold;
-        text-align: center; } }
+        text-align: center; }
+
+  #formulario .form-contact {
+    border-radius: 0px !important; } }
+.modal-form {
+  background: url("../pictures/worldmapform.jpg") no-repeat; }
+
 * {
   margin: 0;
   padding: 0;
@@ -448,18 +454,25 @@ section#box {
       #portafolio .main .slides .cont-img:hover .hov3 {
         background-size: cover;
         opacity: 1; }
-      #portafolio .main .slides .cont-img:hover .hov1 {
-        background: rgba(0, 0, 0, 0.5) url(../pictures/whatsapp.png);
+      #portafolio .main .slides .cont-img:hover .opacity {
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-size: cover;
         opacity: 1; }
     #portafolio .main .opacity {
       position: absolute;
+      font-size: 40px;
       width: 100%;
       height: 100%;
       opacity: 0;
       z-index: 20;
       transition: all 0.5s;
       background-size: cover; }
+      #portafolio .main .opacity p {
+        color: aliceblue;
+        font-weight: bold; }
     #portafolio .main .slidesjs-pagination {
       background: #424242;
       list-style: none;
@@ -657,12 +670,15 @@ contac {
 #formulario {
   z-index: 100;
   background: rgba(0, 0, 0, 0.6);
-  position: fixed; }
+  position: fixed;
+  height: 100vh; }
   #formulario .form-contact {
-    padding: 0px 50px 50px 50px;
     background: rgba(0, 0, 0, 0.9);
-    border-radius: 20px;
-    color: #fff; }
+    background: url("../pictures/worldmapform.jpg");
+    color: #fff;
+    padding: 100px 80px 80px;
+    position: fixed;
+    border-radius: 50%; }
     #formulario .form-contact .glyphicon {
       color: white; }
     #formulario .form-contact .email {
