@@ -283,7 +283,9 @@ section#skill.s_animacion {
         text-align: center; }
 
   #formulario .form-contact {
-    border-radius: 0px !important; } }
+    border-radius: 0px !important;
+    margin-left: 152;
+    height: 100vh; } }
 .modal-form {
   background: url("../pictures/worldmapform.jpg") no-repeat; }
 
