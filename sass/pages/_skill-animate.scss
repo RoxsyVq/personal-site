@@ -27,17 +27,19 @@ section#skill ul li {
   text-align: left;
   text-shadow: 0px -1px 0px #fff;
   width: 100%;
-margin-top: 7px;
+margin-top: 9px;
+    display: flex;
+    align-items: center;
 }
 
 section#skill ul li .img {
-  border: 15px solid transparent;
+  border: 18px solid transparent;
   
   margin-right: 15px; 
     margin-top: 0;
     background: #509b9e;
     img{
-         width:28px;
+         width:40px;
     }
     
     }
@@ -67,7 +69,7 @@ section#skill .s_animacion .img {
 section#skill .s_responsive {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 32px, aliceblue 32px, aliceblue 99%, aliceblue 100%);
   background-repeat: repeat-y;
-  background-size: 95% auto;
+  background-size: 60% auto;
 /*  animation: s_responsive 1.9s ease-in-out;*/
 }
 .anime1{
@@ -78,7 +80,7 @@ section#skill .s_responsive {
 section#skill .s_fotografia {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 32px, aliceblue 32px, aliceblue 99%, aliceblue 100%);
   background-repeat: repeat-y;
-  background-size: 80% auto;
+  background-size: 40% auto;
 /*  animation: s_fotografia 1.6s ease-in-out;*/
 }
 .anime2{
@@ -88,7 +90,7 @@ section#skill .s_fotografia {
 section#skill .s_video {
   background-image: linear-gradient(to right, aliceblue 0%, aliceblue 99%, aliceblue 100%);
   background-repeat: repeat-y;
-  background-size: 60% auto;
+  background-size: 35% auto;
 /*  */
 }
 .anime3{
@@ -98,9 +100,9 @@ section#skill .s_video {
 
 /*imagen*/
 section#skill .s_imagen {
-  background-image: linear-gradient(to right, aliceblue 0%, aliceblue 99%, aliceblue 100%);
+  background-image: linear-gradient(to right, aliceblue 0%, aliceblue 50%, aliceblue 100%);
   background-repeat: repeat-y;
-  background-size: 90% auto;
+  background-size: 50% auto;
 /*  animation: s_imagen 1.8s ease-in-out;*/
 }
 .anime4{
@@ -120,19 +122,19 @@ section#skill.s_animacion {
 
 @keyframes s_responsive {
   0% {background-size: 0% auto;}
-  100% {background-size: 95% auto;}
+  100% {background-size: 60% auto;}
 }
 @keyframes s_imagen {
   0% {background-size: 0% auto;}
-  100% {background-size: 90% auto;}
+  100% {background-size: 50% auto;}
 }
 @keyframes s_fotografia {
   0% {background-size: 0% auto;}
-  100% {background-size: 80% auto;}
+  100% {background-size: 40% auto;}
 }
 @keyframes s_video {
   0% {background-size: 0% auto;}
-  100% {background-size: 60% auto;}
+  100% {background-size: 35% auto;}
 }
 @keyframes s_animacion {
   0% {background-size: 0% auto;}
