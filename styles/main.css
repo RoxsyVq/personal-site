@@ -319,7 +319,7 @@ header.nave {
       header.nave .navbar-default .navbar-toggle:hover {
         background-color: transparent; }
     header.nave .navbar-default .navbar-nav > li {
-      margin-bottom: 10px; }
+      padding: 7px 3px 5px 3px; }
       header.nave .navbar-default .navbar-nav > li a {
         color: aliceblue;
         font-weight: bold;
@@ -332,7 +332,7 @@ header.nave {
           border-bottom-color: #e9727e; }
   header.nave .navbar-brand img {
     width: 40px;
-    top: 3px;
+    top: 10px;
     position: absolute; }
 
 .color-header {
