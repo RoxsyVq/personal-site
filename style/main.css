@@ -287,7 +287,10 @@ section#skill.s_animacion {
     margin-left: 152;
     height: 100vh; }
     #formulario .form-contact .form {
-      width: 100vw; } }
+      width: 100vw; }
+
+  #contacto .carousel-inner .item {
+    height: 550px !important; } }
 .modal-form {
   background: url("../pictures/worldmapform.jpg") no-repeat; }
 
@@ -378,7 +381,8 @@ section#about-me {
   left: 50%;
   margin-left: -655px;
   background-color: white;
-  height: 680px; }
+  height: 720px;
+  background: url(../pictures/geometry2.png); }
   section#about-me .contain {
     display: table-cell;
     vertical-align: middle; }
@@ -401,11 +405,21 @@ section#about-me {
         font-family: Philosopher;
         text-transform: uppercase;
         text-decoration-line: none; }
-      section#about-me .contain .date #name:hover, section#about-me .contain .date #correo:hover, section#about-me .contain .date #cv:hover {
-        background: rgba(233, 114, 126, 0.6);
+      section#about-me .contain .date #cv {
         border-radius: 10px;
-        padding: 10px 10px; }
+        padding: 10px 10px;
+        border: 2px solid #e9727e; }
 
+#about-me .contain .bio .biografia h4 {
+  color: black; }
+#about-me .contain .bio .biografia .a {
+  font-size: 45px;
+  color: darkcyan;
+  padding-right: 14%; }
+#about-me .contain .bio .biografia .cam {
+  font-size: 45px;
+  color: darkcyan;
+  text-align: right; }
 #about-me .contain .bio .biografia .descripcion {
   margin-top: 30px; }
   #about-me .contain .bio .biografia .descripcion p {
@@ -436,7 +450,7 @@ section#box {
   position: relative;
   left: 50%;
   margin-left: -655px;
-  height: 530px;
+  height: 610px;
   background: url("../pictures/pcs.jpg"); }
   #portafolio .main {
     width: 485px;
@@ -459,7 +473,8 @@ section#box {
         background-size: cover;
         opacity: 1; }
       #portafolio .main .slides .cont-img:hover .opacity {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(143, 188, 143, 0.8);
+        color: black;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -500,7 +515,7 @@ section#box {
 
 /***************************skill********************/
 section#skill {
-  height: 670px;
+  height: 700px;
   padding: 29px 0px;
   width: 1310px;
   position: relative;
@@ -508,10 +523,16 @@ section#skill {
   margin-left: -655px;
   margin-top: -20px;
   background: #509b9e; }
+  section#skill .int {
+    text-align: center;
+    bottom: -30px;
+    position: absolute; }
+    section#skill .int img {
+      width: 100%; }
   section#skill .title-1 .svg-wrapper {
     margin-top: -50px !important; }
   section#skill .calcular {
-    height: 80%;
+    height: 70%;
     top: 145px;
     position: absolute;
     width: 80%; }
@@ -550,6 +571,9 @@ section#skill {
 
 section#skill .html {
   transition-timing-function: linear; }
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img {
+  width: 100%; }
 
 /********************efeCTO LITULOS *********/
 section#about-me {
@@ -631,28 +655,37 @@ section#about-me {
   #contacto .yo-mas {
     height: 360px; }
     #contacto .yo-mas .social {
-      background: 90% url("../pictures/3.jpg");
+      background: 90% url("../pictures/03.jpg");
       background-size: cover;
       height: 100%;
       background-color: transparent;
       margin: 0;
       padding: 0; }
       #contacto .yo-mas .social .redes {
-        background: rgba(240, 248, 255, 0.7);
+        background: rgba(0, 0, 0, 0.7);
         text-align: center;
         height: 100%;
         top: -10;
         width: 100%;
         vertical-align: middle;
         position: absolute;
-        color: #000; }
+        color: #fff; }
         #contacto .yo-mas .social .redes h1 {
           margin-top: 60px;
-          color: #000; }
+          color: aliceblue;
+          text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+          font-weight: 900; }
         #contacto .yo-mas .social .redes p {
-          color: #000; }
-        #contacto .yo-mas .social .redes img {
-          width: 60px; }
+          color: aliceblue;
+          font-size: 15px; }
+        #contacto .yo-mas .social .redes .iconos-red {
+          margin-top: 20px; }
+          #contacto .yo-mas .social .redes .iconos-red i {
+            font-size: 60px;
+            color: aliceblue;
+            margin: 20px; }
+            #contacto .yo-mas .social .redes .iconos-red i:hover {
+              color: cyan; }
 
 contac {
   padding: 29px 0px;
