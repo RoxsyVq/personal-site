@@ -35,7 +35,7 @@ section#skill ul li .img {
   margin-top: 0;
   background: #509b9e; }
   section#skill ul li .img img {
-    width: 40px; }
+    width: 35px; }
 
 section#skill .s_responsive .img {
   border-color: #509b9e; }
@@ -409,6 +409,8 @@ section#about-me {
         border-radius: 10px;
         padding: 10px 10px;
         border: 2px solid #e9727e; }
+        section#about-me .contain .date #cv:hover {
+          background: #e9727e; }
 
 #about-me .contain .bio .biografia h4 {
   color: black; }
@@ -473,13 +475,16 @@ section#box {
         background-size: cover;
         opacity: 1; }
       #portafolio .main .slides .cont-img:hover .opacity {
-        background: rgba(143, 188, 143, 0.8);
-        color: black;
+        background: rgba(54, 72, 120, 0.6);
+        color: #000;
         display: flex;
         align-items: center;
         justify-content: center;
         background-size: cover;
         opacity: 1; }
+        #portafolio .main .slides .cont-img:hover .opacity p {
+          font-weight: 900;
+          text-transform: uppercase; }
     #portafolio .main .opacity {
       position: absolute;
       font-size: 40px;
